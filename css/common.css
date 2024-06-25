@@ -1,0 +1,25 @@
+:root {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+#app{
+    /* background-color: aqua; */
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: center;
+}
+.main{
+    width: 1240px;
+    background-color: #ffff;
+
+}
