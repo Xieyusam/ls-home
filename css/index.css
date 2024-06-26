@@ -23,28 +23,29 @@
 .inner .inner-left {
   width: 757px;
   flex-direction: column;
+  z-index: 99;
 }
 
 .inner-left .text {
   color: #000;
   text-align: justify;
   font-family: Inter;
-  font-size: 17px;
+  font-size: 20px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 150%; /* 25.5px */
-  letter-spacing: -0.187px;
+  font-weight: 400;
+  line-height: 150%; /* 30px */
+  letter-spacing: -0.22px;
 }
 
-.inner-left .text a{
+.inner-left .text a {
   color: #000;
-font-family: Inter;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: 150%;
-letter-spacing: -0.22px;
-text-decoration-line: underline;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.22px;
+  text-decoration-line: underline;
 }
 .inner-left .btn-grey {
   margin-top: 30px;
@@ -66,7 +67,7 @@ text-decoration-line: underline;
   cursor: pointer;
 }
 
-.inner-left .btn-grey a{
+.inner-left .btn-grey a {
   color: #000;
   text-decoration: none;
 }
@@ -78,11 +79,11 @@ text-decoration-line: underline;
   color: rgba(0, 0, 0, 0.52);
   text-align: justify;
   font-family: Inter;
-  font-size: 20px;
+  font-size: 15px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 150%; /* 30px */
-  letter-spacing: -0.22px;
+  font-weight: 400;
+  line-height: 150%; /* 22.5px */
+  letter-spacing: -0.165px;
   display: flex;
   align-items: center;
 }
@@ -115,7 +116,6 @@ text-decoration-line: underline;
   right: 0px;
   top: 0;
 }
-
 
 .main-body-2 .body-title {
   color: #000;
@@ -156,7 +156,7 @@ text-decoration-line: underline;
   font-family: Inter;
   font-size: 18px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 150%; /* 27px */
   letter-spacing: -0.198px;
   width: 575px;
@@ -201,6 +201,7 @@ text-decoration-line: underline;
 .main-body-3 .body-list .body-list-item {
   display: flex;
   margin-bottom: 17px;
+  justify-content: flex-end;
 }
 .main-body-3 .body-list .body-list-item .time {
   color: #000;
@@ -211,7 +212,9 @@ text-decoration-line: underline;
   font-weight: 500;
   line-height: 150%; /* 25.5px */
   letter-spacing: -0.187px;
-  margin-left: 23px;
+  /* margin-left: 23px; */
+  width: 150px;
+  text-align: end;
 }
 .main-body-3 .body-list .body-list-item .desc {
   color: #000;
@@ -227,13 +230,13 @@ text-decoration-line: underline;
 
 .main-body-3 .body-list .body-list-item .desc a {
   color: #000;
-font-family: Inter;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 150%;
-letter-spacing: -0.198px;
-text-decoration-line: underline;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.198px;
+  text-decoration-line: underline;
 }
 
 /* main-body-4 */
@@ -254,7 +257,6 @@ text-decoration-line: underline;
   right: 0px;
   top: 130px;
 }
-
 
 .main-body-4 .body-title {
   color: #000;
@@ -292,12 +294,12 @@ text-decoration-line: underline;
 
 .main-body-4 .body-list .body-list-item .where {
   color: #868080;
-font-family: Inter;
-font-size: 12px;
-font-style: normal;
-font-weight: 500;
-line-height: 150%;
-letter-spacing: -0.132px;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.132px;
 }
 .main-body-4 .body-list .body-list-item .desc {
   color: #000;
@@ -305,7 +307,7 @@ letter-spacing: -0.132px;
   font-family: Inter;
   font-size: 18px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 150%; /* 27px */
   letter-spacing: -0.198px;
   width: 575px;
@@ -329,7 +331,7 @@ letter-spacing: -0.132px;
   font-weight: 500;
   line-height: 150%; /* 37.5px */
   letter-spacing: -0.275px;
-  margin-bottom: 40px;
+  margin-bottom: 27px;
 }
 
 .research-list {
@@ -363,16 +365,17 @@ letter-spacing: -0.132px;
   line-height: 150%; /* 30px */
   letter-spacing: -0.22px;
 }
-.research-list-contant .title .title-grey {
+.research-list-contant .contant-title .title-grey {
   color: #000;
+  text-align: justify;
   font-family: Inter;
   font-size: 20px;
-  font-style: italic;
-  font-weight: 100;
-  line-height: 150%;
+  font-style: normal;
+  font-weight: 200 !important;
+  line-height: 150%; /* 30px */
   letter-spacing: -0.22px;
 }
-.research-list-contant .from{
+.research-list-contant .from {
   color: #000;
   text-align: justify;
   font-family: Inter;
@@ -385,13 +388,13 @@ letter-spacing: -0.132px;
 }
 .research-list-contant .author {
   color: #000;
-text-align: justify;
-font-family: Inter;
-font-size: 15px;
-font-style: normal;
-font-weight: 300;
-line-height: 150%; /* 22.5px */
-letter-spacing: -0.165px;
+  text-align: justify;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%; /* 22.5px */
+  letter-spacing: -0.165px;
 }
 
 .research-list-contant .desc {
@@ -409,35 +412,35 @@ letter-spacing: -0.165px;
   display: flex;
   margin-top: 7px;
 }
-.research-list-contant .link-btn a{
+.research-list-contant .link-btn a {
   margin-right: 20px;
-  color: #074CFD;
-font-family: Inter;
-font-size: 15px;
-font-style: normal;
-font-weight: 500;
-line-height: 150%; /* 22.5px */
-letter-spacing: -0.165px;
-text-decoration-line: underline;
+  color: #074cfd;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 22.5px */
+  letter-spacing: -0.165px;
+  text-decoration-line: underline;
 }
 .link-btn-item {
   margin-right: 20px;
-  color: #074CFD;
-font-family: Inter;
-font-size: 15px;
-font-style: normal;
-font-weight: 500;
-line-height: 150%; /* 22.5px */
-letter-spacing: -0.165px;
+  color: #074cfd;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 22.5px */
+  letter-spacing: -0.165px;
 }
-.link-text{
-  color: #074CFD;
-font-family: Inter;
-font-size: 15px;
-font-style: normal;
-font-weight: 300;
-line-height: 150%; /* 22.5px */
-letter-spacing: -0.165px;
+.link-text {
+  color: #074cfd;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%; /* 22.5px */
+  letter-spacing: -0.165px;
 }
 .more-btn {
   color: rgba(0, 0, 0, 0.2);
@@ -452,5 +455,5 @@ letter-spacing: -0.165px;
   margin-bottom: 20px;
   margin-top: 150px;
   align-self: center;
-
+  cursor: pointer;
 }

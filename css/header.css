@@ -40,7 +40,7 @@
   color: rgba(0, 0, 0, 0.19);
   text-align: justify;
   font-family: Inter;
-  font-size: 20px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%; /* 30px */
@@ -50,13 +50,6 @@
 }
 .header-right .select {
   color: #000;
-  text-align: justify;
-  font-family: Inter;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%; /* 30px */
-  letter-spacing: -0.22px;
 }
 
 .nav-menu {
@@ -70,7 +63,7 @@
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 150%; /* 30px */
   letter-spacing: -0.22px;
   margin-left: 50px;

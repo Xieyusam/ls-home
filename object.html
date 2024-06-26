@@ -48,11 +48,11 @@
         <!-- 主体内容 -->
         <div class="main-body">
           <div class="main-body-desc">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Regrettably, it seems that I do not possess the craftsman spirit of "investigating things to achieve knowledge." I have conducted relatively little specialized research on a single object. I have chosen to present here a "spherical magic carpet" for aerial camping.
+            Regrettably, it seems that I do not possess the craftsman spirit of "investigating things to achieve knowledge." I have conducted relatively little specialized research on a single object. I have chosen to present here a "spherical magic carpet" for aerial camping.
           </div>
 
           <div class="main-body-desc-ch" style="margin-top: 74px">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;遗憾，貌似我不具有“格物致知”的匠人精神，对一个物体的专门的研究比较少，我挑选了一个空中露营的“球形魔毯”放在这里。
+            遗憾，貌似我不具有“格物致知”的匠人精神，对一个物体的专门的研究比较少，我挑选了一个空中露营的“球形魔毯”放在这里。
           </div>
 
           <div class="project-img-box">
@@ -60,6 +60,8 @@
               class="img-size-1"
               src="./image/project/project-10.png"
               alt=""
+              @click="goToPage('./detail.html?ProjectId=8')"
+
             />
             
         </div>
@@ -72,12 +74,7 @@
       createApp({
         setup() {
           const goToPage = (path) => {
-            // if (path === '/') {
-            //     window.location.href = window.location.origin
-            // } else {
-            //     window.location.href = path + '.html'
-
-            // }
+            
             window.location.href = path;
           };
           return {

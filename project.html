@@ -59,11 +59,10 @@
                         <div class="focus-list-item-right">
                             <!-- <img style="width: 100%;" src="./image/focus/focus-1.png" alt=""> -->
                             <div id="video-box-1" style="width: 100%;height: 534px;">
-                                <video id="video-1" style="width: 100%;" controls
-                                    src="./file/video-1.mp4" muted="" loop="" playsinline=""
-                                    disableremoteplayback="" disablepictureinpicture=""></video>
+                                <video id="video-1" style="width: 100%;" controls src="./file/video-1-mini.mp4" muted=""
+                                    loop="" playsinline="" disableremoteplayback="" disablepictureinpicture=""></video>
 
-                                    <!-- <video id="video-1" style="width: 100%;" controls
+                                <!-- <video id="video-1" style="width: 100%;" controls
                                     src="./file/video-Hearing The Bullseye.mp4" muted="" loop="" playsinline=""
                                     disableremoteplayback="" disablepictureinpicture=""></video> -->
                                 <!-- <video src="/static/vault/Projects/Cell Space/_resources/Cell Space/Cell Space 30s.webm" loop="" playsinline="" disableremoteplayback="" disablepictureinpicture="" style="display: block; width: 100%; object-fit: cover;"></video> -->
@@ -75,12 +74,14 @@
                         <div class="focus-list-item-left">
                             <div class="title">Family-centered simple sound shooting interaction game</div>
                             <div class="time">2021-2022</div>
-                            <div class="desc">A paper-based sound shooting game for both the blind and the sighted.</div>
+                            <div class="desc">A paper-based sound shooting game for both the blind and the sighted.
+                            </div>
                         </div>
                         <div class="focus-list-item-right">
                             <div id="video-box-2" style="width: 100%;height: 534px;">
-
-                                <img style="width: 100%;" src="./image/focus/focus-2.png" alt="">
+                                <video id="video-2" style="width: 100%;" controls src="./file/video-2.mp4" muted=""
+                                    loop="" playsinline="" disableremoteplayback="" disablepictureinpicture=""></video>
+                                <!-- <img style="width: 100%;" src="./image/focus/focus-2.png" alt=""> -->
                                 <!-- <video id="video-2" style="width: 100%;" src="./file/video-1.mp4" muted="" loop=""
                                     playsinline="" disableremoteplayback="" disablepictureinpicture=""></video> -->
                             </div>
@@ -163,25 +164,38 @@
                         Intelligence。抱着重建设计人文，重新发明日常的愿景，我埋头栽进了一家正在风口上的AI初创公司，寻找设计是否会消失的答案。某一个加班的周末，我和市场部的伙伴在讨论符合AI创业公司落地的应用需求时，突然猛的发现，假如人类连思考意识延伸的需求都被替代了，那设计好像真的会消失···再后来我们看到了很多有意思的AI产品不仅在自动化我们的工作流，还在自动化我们的思考需求的意识，比如Dot、Earth2···
                         <br>年初，我回归到在校期间我一直研究的无障碍设计领域，希望在30岁之前能在这个领域做出一些不一样的东西。这个领域对我来说很特别，它一直是我认为最需要人文，感性、关怀、价值与目的，最重要的，对于无名（unknown）和未知的爱（unnamable）。或许设计最终会消失，或许设计追其历史只是短暂的存在过，或许人类在火星上的繁衍也只需要让AI上班，第N代的地球人正躺在椅子上带着Vision
                         pro来回忆地球上的生活。但是依旧存在着那么一点点趣味，就像刘慈欣的短篇小说《诗云》中提及的那首诗“啊啊啊啊啊啊，啊啊啊啊啊········”多么有趣的诗，连高维生物都无法复刻的艺术。
-                        <br><br>致此，我将2021年起的部分创作作品都呈现在这里，它们在我眼里都是那首无法被AI复刻的诗。</div>
+                        <br><br>致此，我将2021年起的部分创作作品都呈现在这里，它们在我眼里都是那首无法被AI复刻的诗。
+                    </div>
 
 
                 </div>
 
                 <div class="project-img-box">
-                    <img class="img-size-1" src="./image/project/project-1.png" alt="">
-                    <img class="img-size-2" src="./image/project/project-2.png" alt="">
-                    <img class="img-size-3" src="./image/project/project-3.png" alt="">
-                    <img class="img-size-1" src="./image/project/project-4.png" alt="">
-                    <img class="img-size-2" src="./image/project/project-5.png" alt="">
-                    <img class="img-size-3" src="./image/project/project-6.png" alt="">
-                    <img class="img-size-1"
+                    <img @click="goToPage('./detail.html?ProjectId=1')" class="img-size-1"
+                        src="./image/project/project-1.png" alt="">
+                    <img @click="goToPage('./detail.html?ProjectId=2')" class="img-size-2"
+                        src="./image/project/project-2.png" alt="">
+                    <img @click="goToPage('./detail.html?ProjectId=3')" class="img-size-3"
+                        src="./image/project/project-3.png" alt="">
+                    <img @click="goToPage('./detail.html?ProjectId=4')" class="img-size-1"
+                        src="./image/project/project-4.png" alt="">
+                    <img @click="goToPage('./detail.html?ProjectId=5')" class="img-size-2"
+                        src="./image/project/project-5.png" alt="">
+                    <img @click="goToPage('./detail.html?ProjectId=6')" class="img-size-3"
+                        src="./image/project/project-6.png" alt="">
+                    <img @click="goToPage('./detail.html?ProjectId=9')" class="img-size-1"
                         src="./image/project/project-7.png" alt="">
-                    <img class="img-size-2" src="./image/project/project-8.png" alt="">
-                    <img class="img-size-3" src="./image/project/project-9.png" alt="">
-                    <img class="img-size-1" src="./image/project/project-10.png" alt="">
-                    <img class="img-size-2" src="./image/project/project-11.png" alt="">
-                    <img class="img-size-3" src="./image/project/project-12.png" alt="">
+                    <img @click="goToPage('./detail.html?ProjectId=10')" class="img-size-2"
+                        src="./image/project/project-8.png" alt="">
+                    <img @click="goToPage('./detail.html?ProjectId=7')" class="img-size-3"
+                        src="./image/project/project-9.png" alt="">
+                    <img @click="goToPage('./detail.html?ProjectId=8')" class="img-size-1"
+                        src="./image/project/project-10.png" alt="">
+                    <!-- <img class="img-size-2" src="./image/project/project-11.png" alt=""> -->
+                    <img @click="goToPage('./detail.html?ProjectId=11')" class="img-size-2"
+                        src="./image/project/project-12.png" alt="">
+                    <div class="img-size-3"></div>
+
 
 
                 </div>
@@ -211,11 +225,11 @@
 
                         const video1 = document.getElementById('video-1'); // 选择视频元素
                         const video2 = document.getElementById('video-2'); // 选择视频元素
-                        const video3 = document.getElementById('video-3'); // 选择视频元素
+                        // const video3 = document.getElementById('video-3'); // 选择视频元素
 
                         const videoContainer1 = document.getElementById('video-box-1');
                         const videoContainer2 = document.getElementById('video-box-2');
-                        const videoContainer3 = document.getElementById('video-box-3');
+                        // const videoContainer3 = document.getElementById('video-box-3');
 
 
                         videoContainer1.addEventListener('mouseenter', () => {
@@ -232,12 +246,7 @@
                         videoContainer2.addEventListener('mouseleave', () => {
                             video2.pause();
                         });
-                        videoContainer3.addEventListener('mouseenter', () => {
-                            video3.play();
-                        });
-                        videoContainer3.addEventListener('mouseleave', () => {
-                            video3.pause();
-                        });
+                        
                     });
 
 
