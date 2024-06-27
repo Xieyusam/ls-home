@@ -87,6 +87,17 @@
   display: flex;
   align-items: center;
 }
+.inner-right .info a{
+  color: rgba(0, 0, 0, 0.52);
+  text-align: justify;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 22.5px */
+  letter-spacing: -0.165px;
+  margin-left: 4px;
+}
 .inner-right .text-icon {
   color: rgba(0, 0, 0, 0.52);
   text-align: justify;
