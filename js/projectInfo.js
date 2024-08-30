@@ -293,9 +293,12 @@ const project4 = {
   },
   contant: [
     {
-      type: "center-text",
-      text: "Haha, The project is currently underway, stay tuned with great anticipation.",
-    },
+      type: "img",
+      link: "./image/detail/4/1.png",
+    },{
+      type: "img",
+      link: "./image/detail/4/2.png",
+    }
   ],
 };
 

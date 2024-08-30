@@ -21,7 +21,7 @@
 }
 
 .inner .inner-left {
-  width: 757px;
+  width: 786px;
   flex-direction: column;
   z-index: 99;
 }
@@ -116,7 +116,7 @@
   flex-direction: column;
   /* padding: 66px; */
   box-sizing: border-box;
-  margin-top: 70px;
+  margin-top: 100px;
   position: relative;
 }
 
