@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luoshan's homepage</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/project.css">
+</head>
+
+<body>
+    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+    <script src="./js/vue.global.js"></script>
+
+    <div id="app" style="overflow-x: hidden;">
+        <div class="main">
+            <!-- 菜单 -->
+            <div class="header">
+                <div class="header-left">
+                    <div class="header-name">
+                        LUO SHAN
+                    </div>
+                    <div class="header-email">
+                        luoshan3398@qq.com
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div @click="goToPage('./index.html')" class="header-menu ">
+                        Home
+                    </div>
+                    <div @click="goToPage('./project.html')" class="header-menu select">
+                        Project
+                    </div>
+
+                </div>
+            </div>
+            <!-- 二级菜单 -->
+            <div class="nav-menu">
+                <div @click="goToPage('./people.html')" class="nav-menu-item">人：People</div>
+                <div @click="goToPage('./events.html')" class="nav-menu-item">事：Events</div>
+                <div @click="goToPage('./object.html')" class="nav-menu-item"> 物：Object</div>
+                <div @click="goToPage('./space.html')" class="nav-menu-item"> 场：Space</div>
+
+
+            </div>
+            <!-- 主体内容 -->
+            <div class="main-body">
+                <div class="focus-list">
+                    <div class="focus-list-item">
+
+                        <div class="focus-list-item-left">
+                            <div class="title">Hearing the Bullseye</div>
+                            <div class="time">2021-2022</div>
+                            <div class="desc">How can we facilitate VI individuals to play together with sighted
+                                individuals? In the VI community, social play plays a crucial role as it.</div>
+                        </div>
+                        <div class="focus-list-item-right">
+                            <!-- <img style="width: 100%;" src="./image/focus/focus-1.png" alt=""> -->
+                            <div id="video-box-1" style="width: 100%;height: 534px;">
+                                <video id="video-1" style="width: 100%;" controls src="./file/video-1-mini.mp4" muted=""
+                                    loop="" playsinline="" disableremoteplayback="" disablepictureinpicture=""></video>
+
+                                <!-- <video id="video-1" style="width: 100%;" controls
+                                    src="./file/video-Hearing The Bullseye.mp4" muted="" loop="" playsinline=""
+                                    disableremoteplayback="" disablepictureinpicture=""></video> -->
+                                <!-- <video src="/static/vault/Projects/Cell Space/_resources/Cell Space/Cell Space 30s.webm" loop="" playsinline="" disableremoteplayback="" disablepictureinpicture="" style="display: block; width: 100%; object-fit: cover;"></video> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="focus-list-item">
+
+                        <div class="focus-list-item-left">
+                            <div class="title">Family-centered simple sound shooting interaction game</div>
+                            <div class="time">2021-2022</div>
+                            <div class="desc">A paper-based sound shooting game for both the blind and the sighted.
+                            </div>
+                        </div>
+                        <div class="focus-list-item-right">
+                            <div id="video-box-2" style="width: 100%;height: 534px;">
+                                <video id="video-2" style="width: 100%;" controls src="./file/video-2.mp4" muted=""
+                                    loop="" playsinline="" disableremoteplayback="" disablepictureinpicture=""></video>
+                                <!-- <img style="width: 100%;" src="./image/focus/focus-2.png" alt=""> -->
+                                <!-- <video id="video-2" style="width: 100%;" src="./file/video-1.mp4" muted="" loop=""
+                                    playsinline="" disableremoteplayback="" disablepictureinpicture=""></video> -->
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+                <!-- <div class="main-body-desc">I am an Assistant Professor in Computer Sciences at the University of
+                    Wisconsin-Madison. My research interests include Human-Computer Interaction (HCI), accessibility,
+                    augmented and virtual reality (AR/VR), and AI-powered interactive systems. I design and build
+                    intelligent interactive systems to enhance human abilities. Via my research,</div>
+
+                <div class="bg-box">
+                    <img class="bg-img" style="width: 100%;" src="./image/bg/project-2.png" alt="">
+                </div>
+                <div class="project-img-box">
+                    <img class="img-size-1" src="./image/project/project-1.png" alt="">
+                    <img class="img-size-2" src="./image/project/project-2.png" alt="">
+                    <img class="img-size-3" src="./image/project/project-3.png" alt="">
+                    <img class="img-size-1" src="./image/project/project-4.png" alt="">
+                    <img class="img-size-2" src="./image/project/project-5.png" alt="">
+                    <img class="img-size-3" src="./image/project/project-6.png" alt="">
+                    <img class="img-size-1" src="./image/project/project-7.png" alt="">
+
+
+                </div> -->
+            </div>
+                <!-- 描述 -->
+                <div class="project-outer-box">
+                    <div class="project-box">
+                        <div class="project-box-title">Will design disappear?</div>
+                        <div class="project-box-desc"> Will design disappear? It's a thought-provoking topic with a lasting
+                            impact. The first time I heard this question was in 2023 when AI was gradually coming into the
+                            public eye. I was overjoyed and sought out Professor Wang Yun to discuss a project called "AI
+                            for Design" (simply put, it's about designing a universal model for design). He took a puff of
+                            his cigarette, remained silent for a long time, and then asked, "Will design disappear?"
+                            <br><br>
+                            This project was later shelved, and at the time, I thought it was because, as an art and design
+                            student, I lacked technical skills. After all, how could design disappear? In ancient times,
+                            humans created sickles to harvest rice, and later, these sickles evolved into countless
+                            automated harvesters. Design uses technology to create objects, helping humans extend their
+                            conscious needs further and further, beyond the reach of their bodies, even transcending space
+                            and time...
+                            <br> <br>
+                            Later, I officially became part of the historical river of evolution with AI. At that time, Dean
+                            Gao Shiming was emphasizing that there are two kinds of AI: Artificial Intelligence and Artistic
+                            Intelligence. With the vision of rebuilding design humanities and reinventing the everyday, I
+                            plunged into a booming AI startup company, looking for the answer to whether design would
+                            disappear. One weekend while working overtime, my colleagues from the marketing department and I
+                            were discussing the application needs suitable for an AI startup company, and suddenly I
+                            realized that if even the human need for the extension of consciousness was replaced, then
+                            design might really disappear... Later, we saw many interesting AI products not only automating
+                            our workflow but also automating our conscious needs, such as Dot, Earth2...
+                            <br><br>
+                            At the beginning of the year, I returned to the field of accessible design that I had been
+                            researching during my school days, hoping to make some different things in this field before I
+                            turn 30. This field is very special to me; it has always been what I think is most in need of
+                            humanity, sensibility, care, value, and purpose, most importantly, love for the unknown and the
+                            unnamable. Perhaps design will eventually disappear, perhaps design is just a brief existence in
+                            its history, perhaps humans on Mars only need AI to work, and the Nth generation of Earthlings
+                            are lying in chairs reminiscing about life on Earth with Vision Pro. But there is still a bit of
+                            fun, just like the poem mentioned in Liu Cixin's short story "Poetry Cloud" - "Ah ah ah ah ah,
+                            ah ah ah ah..." What an interesting poem, even high-dimensional beings cannot replicate art.
+                            <br><br>
+                            Here, I present some of my creative works since 2021. In my eyes, they are all that poem that
+                            cannot be replicated by AI.
+                        </div>
+                        <div class="project-box-desc">
+                            设计会消失吗？这是一个后劲很大的思辨话题，我第一次听到这个问题时，是2023年AI已经逐渐走向大众视野，我喜出望外的找王昀教授沟通中心可以做一个课题叫做"设计设计的AI"（简单来说就是设计一个设计的通用模型）。他却吸了口烟，沉默很久，抛出一句：“设计会消失吗？”。
+                            这个课题后来不了了知，当时的我一度以为是自己作为艺术类的设计学生，不具有技术能力。毕竟设计怎么会消失呢？远古时期人类想要割水稻，才有了镰刀，后来这把镰刀变成了无数个自动化收割机。而设计利用技术造物，帮助人类把意识需求延伸的越来越远，超越了身体够得到的距离，甚至超越了空间和时间...
+                            <br>后来我正式卷入了和AI一起进化的历史河流里，当时高世名院长正在强调有两个AI，一个是Artificial Intelligence，另外一个是Artistic
+                            Intelligence。抱着重建设计人文，重新发明日常的愿景，我埋头栽进了一家正在风口上的AI初创公司，寻找设计是否会消失的答案。某一个加班的周末，我和市场部的伙伴在讨论符合AI创业公司落地的应用需求时，突然猛的发现，假如人类连思考意识延伸的需求都被替代了，那设计好像真的会消失···再后来我们看到了很多有意思的AI产品不仅在自动化我们的工作流，还在自动化我们的思考需求的意识，比如Dot、Earth2···
+                            <br>年初，我回归到在校期间我一直研究的无障碍设计领域，希望在30岁之前能在这个领域做出一些不一样的东西。这个领域对我来说很特别，它一直是我认为最需要人文，感性、关怀、价值与目的，最重要的，对于无名（unknown）和未知的爱（unnamable）。或许设计最终会消失，或许设计追其历史只是短暂的存在过，或许人类在火星上的繁衍也只需要让AI上班，第N代的地球人正躺在椅子上带着Vision
+                            pro来回忆地球上的生活。但是依旧存在着那么一点点趣味，就像刘慈欣的短篇小说《诗云》中提及的那首诗“啊啊啊啊啊啊，啊啊啊啊啊········”多么有趣的诗，连高维生物都无法复刻的艺术。
+                            <br><br>致此，我将2021年起的部分创作作品都呈现在这里，它们在我眼里都是那首无法被AI复刻的诗。
+                        </div>
+    
+    
+                    </div>
+    
+                    <div class="project-img-box">
+                        <img @click="goToPage('./detail.html?ProjectId=1')" class="img-size-1"
+                            src="./image/project/project-1.png" alt="">
+                        <img @click="goToPage('./detail.html?ProjectId=2')" class="img-size-2"
+                            src="./image/project/project-2.png" alt="">
+                        <img @click="goToPage('./detail.html?ProjectId=3')" class="img-size-3"
+                            src="./image/project/project-3.png" alt="">
+                        <img @click="goToPage('./detail.html?ProjectId=4')" class="img-size-1"
+                            src="./image/project/project-4.png" alt="">
+                        <img @click="goToPage('./detail.html?ProjectId=5')" class="img-size-2"
+                            src="./image/project/project-5.png" alt="">
+                        <img @click="goToPage('./detail.html?ProjectId=6')" class="img-size-3"
+                            src="./image/project/project-6.png" alt="">
+                        <img @click="goToPage('./detail.html?ProjectId=9')" class="img-size-1"
+                            src="./image/project/project-7.png" alt="">
+                        <img @click="goToPage('./detail.html?ProjectId=10')" class="img-size-2"
+                            src="./image/project/project-8.png" alt="">
+                        <img @click="goToPage('./detail.html?ProjectId=7')" class="img-size-3"
+                            src="./image/project/project-9.png" alt="">
+                        <img @click="goToPage('./detail.html?ProjectId=8')" class="img-size-1"
+                            src="./image/project/project-10.png" alt="">
+                        <!-- <img class="img-size-2" src="./image/project/project-11.png" alt=""> -->
+                        <img @click="goToPage('./detail.html?ProjectId=11')" class="img-size-2"
+                            src="./image/project/project-12.png" alt="">
+                        <div class="img-size-3"></div>
+    
+    
+    
+                    </div>
+                </div>
+    
+
+        </div>
+
+
+    </div>
+
+    <script>
+        const { createApp, ref } = Vue
+
+        createApp({
+            setup() {
+                const goToPage = (path) => {
+                    // if (path === '/') {
+                    //     window.location.href = window.location.origin
+                    // } else {
+                    //     window.location.href = path + '.html'
+
+                    // }
+                    window.location.href = path
+
+                }
+                const autoPlayVideo = () => {
+                    document.addEventListener('DOMContentLoaded', function () {
+
+                        const video1 = document.getElementById('video-1'); // 选择视频元素
+                        const video2 = document.getElementById('video-2'); // 选择视频元素
+                        // const video3 = document.getElementById('video-3'); // 选择视频元素
+
+                        const videoContainer1 = document.getElementById('video-box-1');
+                        const videoContainer2 = document.getElementById('video-box-2');
+                        // const videoContainer3 = document.getElementById('video-box-3');
+
+
+                        videoContainer1.addEventListener('mouseenter', () => {
+                            video1.play();
+                        });
+
+                        videoContainer1.addEventListener('mouseleave', () => {
+                            video1.pause();
+                        });
+                        videoContainer2.addEventListener('mouseenter', () => {
+                            video2.play();
+                        });
+
+                        videoContainer2.addEventListener('mouseleave', () => {
+                            video2.pause();
+                        });
+                        
+                    });
+
+
+                }
+                autoPlayVideo()
+                return {
+                    goToPage
+                }
+            }
+        }).mount('#app')
+    </script>
+
+<script src="./js/resize.js"></script></body>
+
+</html>

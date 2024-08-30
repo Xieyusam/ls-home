@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luoshan's homepage</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/focus.css">
+</head>
+
+<body>
+    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+    <script src="./js/vue.global.js"></script>
+
+    <div id="app">
+        <div class="main">
+            <!-- 菜单 -->
+            <div class="header">
+                <div class="header-left">
+                    <div class="header-name">
+                        LUO SHAN
+                    </div>
+                    <div class="header-email">
+                        luoshan3398@qq.com
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div @click="goToPage('/project')" class="header-menu select">
+                        project
+                    </div>
+                    <div @click="goToPage('/')" class="header-menu ">
+                        about me
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- 二级菜单 -->
+            <div class="nav-menu">
+                <div @click="goToPage('/focus')" class="nav-menu-item select">design need to focus</div>
+                <div class="nav-menu-item">design need a place</div>
+                <div class="nav-menu-item">design need find history</div>
+            </div>
+            <!-- 主体内容 -->
+            <div class="main-body">
+                <div class="focus-list">
+                    <div class="focus-list-item">
+
+                        <div class="focus-list-item-left">
+                            <div class="title">Hearing the Bullseye</div>
+                            <div class="time">2021-2022</div>
+                            <div class="desc">How can we facilitate VI individuals to play together with sighted
+                                individuals? In the VI community, social play plays a crucial role as it enhances
+                                communication and interaction between VI and sighted individuals, thereby promoting
+                                social harmony. However, due to the physiological VI of VI individuals, VI individuals
+                                often find it challenging to compete or collaborate on an equal level with sighted
+                                individuals during social games.</div>
+                        </div>
+                        <div class="focus-list-item-right">
+                            <img style="width: 100%;" src="./image/focus/focus-1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="focus-list-item">
+
+                        <div class="focus-list-item-left">
+                            <div class="title">Hearing the Bullseye</div>
+                            <div class="time">2021-2022</div>
+                            <div class="desc">How can we facilitate VI individuals to play together with sighted
+                                individuals? In the VI community, social play plays a crucial role as it enhances
+                                communication and interaction between VI and sighted individuals, thereby promoting
+                                social harmony. However, due to the physiological VI of VI individuals, VI individuals
+                                often find it challenging to compete or collaborate on an equal level with sighted
+                                individuals during social games.</div>
+                        </div>
+                        <div class="focus-list-item-right">
+                            <img style="width: 100%;" src="./image/focus/focus-2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        const { createApp, ref } = Vue
+
+        createApp({
+            setup() {
+                const goToPage = (path) => {
+                    // if (path === '/') {
+                    //     window.location.href = window.location.origin
+                    // } else {
+                    //     window.location.href = path + '.html'
+
+                    // }
+                    window.location.href = path
+
+                }
+                return {
+                    goToPage
+                }
+            }
+        }).mount('#app')
+    </script>
+
+<script src="./js/resize.js"></script></body>
+
+</html>
