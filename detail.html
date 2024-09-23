@@ -58,6 +58,12 @@
                 <div class="detail-box">
                     <div class="detail-box_title">
                         {{initProjectData.title}}
+                        <span v-if="initProjectData.titleLink" class="detail-box_titleLink">
+                            <span v-for="itemLink in initProjectData.titleLink" :key="itemLink.link">
+                                <a download="" :href="itemLink.link">{{itemLink.name}}</a>
+                            </span>
+                            
+                        </span>
                     </div>
                     <div class="detail-box_time">
                         {{initProjectData.time}}

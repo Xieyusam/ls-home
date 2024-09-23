@@ -12,6 +12,18 @@
   letter-spacing: -0.275px;
 }
 
+.detail-box_titleLink a{
+  color: #074CFD;
+  text-align: justify;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.22px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
 .detail-box_time {
   color: #000;
   text-align: justify;

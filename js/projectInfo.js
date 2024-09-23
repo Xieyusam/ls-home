@@ -282,13 +282,15 @@ const project3 = {
 };
 
 const project4 = {
-  title: "ScenSense : Let every smile have its own melody",
-  time: "2023",
-  anthor: "Shan Luo*, Jianan Liu.",
+  title: "Hearing the Smile” —Scoring Spontaneous Social Scenes for the Visually Impaired",
+  time: "2024",
+  anthor: "Shan Luo*, Jianan Liu. Botao Hu",
+  titleLink:[
+    {name:'PDF',link:'./file/ScenScene___CHI_2025_Paper_compressed.pdf'}
+  ],
   award: [],
   introduction: {
-    text: `This is the first project for the visually impaired in 2024. We have once again entered the blind school in Hangzhou, spending time with friends there, and experiencing their youth.
-    How can we allow blind individuals to "see" the smiles of strangers? In social moments, the reason for promoting communication between the visually impaired and sighted people may be due to non-verbal gestures or expressions, which are very important in the social process. We focus on the smile at the beginning of social interactions and transform it into the background music of the destined encounter moment in a TV drama, so that every encounter can hear the melody of a smile.`,
+    text: `Can the visually impaired (VI) "hear" others’ smiles? This study employs an ethnographic experiential futures methodology to envision AI-driven melodic auditory augmentation beyond traditional descriptive approaches for spontaneous social interactions involving VI individuals. We propose a mid-fidelity research probe: "See Sing," a smart glasses application that translates facial expressions, gestures, and environmental cues into emotionally contextual soundscapes, akin to real-time cinematic scoring. Our findings indicate that this melodic augmentation not only facilitates VI users’ spontaneous interactions with strangers but also enhances their comprehension of emotional nuances in multi-person dialogues. However, the research also unveils ethical concerns, particularly regarding potential misunderstandings arising from AI biases in interpreting social subtleties. This work contributes to the discourse on the intersection of AI, assistive technology, and social interaction in our increasingly tech-mediated world, raising critical questions about the future of sensory augmentation and its societal implications.`,
     buttonGroup: [],
   },
   contant: [
