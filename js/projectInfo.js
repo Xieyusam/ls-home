@@ -19,99 +19,112 @@ World Summit on the Information Society (WSIS Prizes) Electronic Environment Cat
 
 const project1 = {
   title: "Hearing the bullseye",
+  titleDescription:'(CSCW’24, CHI PLAY’24, ASSETS’24), Waitting Publication.',
+  titleLink: [
+    { name: "PDF", link: "./file/CHI_Play2024.pdf" },
+  ],
   time: "2021-2022",
   anthor:
     "Shan Luo*, Yan Chen, Hanxiang Fang, Lipin Luo, Longfei Zhou, Yun Wang, Jihong Zhu, Lu Lin, Jianan Liu, Botao Hu.",
   award: [
     {
       id: 1,
-      time: "Dec 27 2023",
-      desc: "ShangHai West Bund Art And Design Expo, A Live-action CS Sound Shooting Game App.",
-      link: "",
-      place: "Hangzhou",
-    },
-    {
-      id: 2,
-      time: "Dec 15 2022",
-      desc: "4th China Design Exhibition and Public Art Special Exhibition, Hearing The Bullseye.",
-      link: "",
-      place: "Shenzhen",
-    },
-    {
-      id: 3,
-
-      time: "Mar 15 2022",
-      desc: "Dutch Design Week, Hearing The Bullseye.",
-      link: "",
-      place: "Dutch",
-    },
-    {
-      id: 4,
       time: "June 15 2021",
       desc: "Beyond the Realm Exhibition: Design Intellegence Center Honorable Mentions, Hearing The Bullseye.",
       link: "",
-      place: "Shaoxing",
-    },
-    {
-      id: 5,
-      time: "Dec 25 2022",
-      desc: "Gold Award, 13th International User Experience Competition (UXDA, UXPA).",
-      link: "",
       place: "",
     },
     {
-      id: 6,
-      time: "May 15 2022",
-      desc: "Finalist, OPPO Global ”Smile Proposal” Finalist Award.",
-      link: "",
-      place: "",
-    },
-    {
-      id: 7,
+      id: 2,
       time: "Dec 22 2021",
       desc: "Honorable Mention, DIA China Design Intelligent Manufacturing Award.",
       link: "",
       place: "",
     },
     {
-      id: 8,
+      id: 3,
+      time: "Dec 15 2022",
+      desc: "4th China Design Exhibition and Public Art Special Exhibition, Hearing The Bullseye.",
+      link: "",
+      place: "",
+    },
+    {
+      id: 4,
+      time: "March 15 2022",
+      desc: "Dutch Design Week, Hearing The Bullseye.",
+      link: "",
+      place: "",
+    },
+    {
+      id: 5,
       time: "May 15 2022",
-      desc: "Hearing the Bullseye: An Auditory-Cued Archery Exergame for the Visually Impaired and Their Sighted Family and Friends.ASSETS’24 full paper.",
+      desc: "Finalist, OPPO Global ”Smile Proposal” Finalist Award.",
       link: "",
       place: "",
     },
-
     {
-      id: 9,
-      time: "May 15 2022",
-      desc: "Demostrating: Hearing the Bullseye- An Auditory-Cued Archery Exergame for the Visually Impaired and Their Sighted Family and Friends. CHI’24 workshop, ARXIV.",
-      link: "",
-      place: "",
-    },
-
-    {
-      id: 10,
-      time: "Dec 15 2023",
-      desc: "Archery with the Blind. Health Development: Design Empowerment. Peking University Press’23.",
-      link: "",
-      place: "",
-    },
-
-    {
-      id: 11,
-      time: "Jan 14 2024",
-      desc: "A method for enabling fair archery competition between blind and sighted individuals. Utility model patent, No: ZL202110530004.0.",
-      link: "",
-      place: "",
-    },
-
-    {
-      id: 12,
+      id: 6,
       time: "Jan 15 2022",
       desc: "Bow, Listening Arrow. Design patent, Application No: 202130290451.4.",
       link: "",
       place: "",
     },
+    {
+      id: 7,
+      time: "Dec 25 2022",
+      desc: "Gold Award, 13th International User Experience Competition (UXDA, UXPA).",
+      link: "",
+      place: "",
+    },
+    {
+      id: 8,
+      time: "Dec 27 2023",
+      desc: "ShangHai West Bund Art And Design Expo, A Live-action CS Sound Shooting Game App. ",
+      link: "",
+      place: "",
+    },
+    {
+      id: 9,
+      time: "Dec 15 2023",
+      desc: "Archery with the Blind. Health Development: Design Empowerment. Peking University Press’23.",
+      link: "",
+      place: "",
+    },
+    {
+      id: 10,
+      time: "Jan 14 2024",
+      desc: "A method for enabling fair archery competition between blind and sighted individuals. Utility model patent, No: ZL202110530004.0.",
+      link: "",
+      place: "",
+    },
+    {
+      id: 11,
+      time: "May 15 2024",
+      desc: "Demostrating: Hearing the Bullseye- An Auditory-Cued Archery Exergame for the Visually Impaired and Their Sighted Family and Friends. CHI’24 workshop.",
+      link: "",
+      place: "",
+    },
+    {
+      id: 12,
+      time: "May 15 2024",
+      desc: "Designing a Safe Auditory-Cued Archery Exertion Game for the Visually Impaired and Sighted to Enjoy Together. ASSETS’24 poster.",
+      link: "",
+      place: "",
+    },
+    {
+      id: 13,
+      time: "June 15 2024",
+      desc: "Hearing the Bullseye: An Auditory-Cued Archery Exergame for the Visually Impaired and Their Sighted Family and Friends.CHI PLAY’24 .",
+      link: "",
+      place: "",
+    },
+    {
+      id: 14,
+      time: "June 18 2024",
+      desc: "Hearing the Bullseye: Demonstrating the Design of an Auditory-Cued Archery Exergame for the Visually Impaired and Their Sighted Family and Friends. CSCW’24 .",
+      link: "",
+      place: "",
+    }
   ],
   introduction: {
     text: 'How can blind and sighted individuals play together? The natural disparity in visual abilities often poses challenges for fair competition in social play. This can diminish the confidence of visually impaired (VI) individuals and reduce engagement for sighted players. While previous literature has incorporated fairness design strategies for the VI, we additionally aim to address the potential problem of boredom for sighted players by providing enhanced visual feedback without compromising fairness as a novel design strategy. We present "Hearing the Bullseye", an archery exergame designed for harmonious play between VI individuals and their sighted family and friends. Players use a bow equipped with an infrared sensor, allowing them to target an unseen bullseye using sound rather than sight. An empirical study involving 18 sighted and VI participants demonstrated that the design strategies used in "Hearing the Bullseye" effectively promote social engagement among both groups while ensuring fair competition. ',
@@ -282,9 +295,10 @@ const project3 = {
 };
 
 const project4 = {
-  title: "Hearing the Smile” —Scoring Spontaneous Social Scenes for the Visually Impaired",
+  title: "Hearing the Smile” —Scoring Spontaneous Social Scenes for the Visually Impaired. ",
   time: "2024",
   anthor: "Shan Luo*, Jianan Liu. Botao Hu",
+  titleDescription: '(CHI’25),Under Review.',
   titleLink:[
     {name:'PDF',link:'./file/ScenScene___CHI_2025_Paper_compressed.pdf'}
   ],
@@ -300,6 +314,21 @@ const project4 = {
     },{
       type: "img",
       link: "./image/detail/4/2.png",
+    },{
+      type: "img",
+      link: "./image/detail/4/3.png",
+    },{
+      type: "img",
+      link: "./image/detail/4/4.png",
+    },{
+      type: "img",
+      link: "./image/detail/4/5.png",
+    },{
+      type: "img",
+      link: "./image/detail/4/6.png",
+    },{
+      type: "img",
+      link: "./image/detail/4/7.png",
     }
   ],
 };
