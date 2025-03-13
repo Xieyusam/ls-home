@@ -295,10 +295,11 @@ const project3 = {
 };
 
 const project4 = {
-  title: "Hearing the Smile” —Scoring Spontaneous Social Scenes for the Visually Impaired. ",
+  title: "Hearing the Smile” —Scoring Spontaneous Social Scenes for the Visually Impaired.",
+  greyTitle:'',
   time: "2024",
   anthor: "Shan Luo*, Jianan Liu. Botao Hu",
-  titleDescription: '(CHI’25),Under Review.',
+  titleDescription: ' (IEEE VR),Camera Ready.',
   titleLink:[
     {name:'PDF',link:'./file/ScenScene___CHI_2025_Paper_compressed.pdf'}
   ],
