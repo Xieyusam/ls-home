@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luoshan's homepage</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/detail.css">
+</head>
+
+<body>
+    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+    <script src="./js/vue.global.js"></script>
+    <script src="./js/projectInfo.js"></script>
+
+
+    <div id="app">
+        <div class="main">
+            <!-- 菜单 -->
+            <div class="header">
+                <div class="header-left">
+                    <div class="header-name">
+                        LUO SHAN
+                    </div>
+                    <div class="header-email">
+                        luoshan3398@qq.com
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div @click="goToPage('./index.html')" class="header-menu ">
+                        Home
+                    </div>
+                    <div @click="goToPage('./project.html')" class="header-menu select">
+                        Project
+                    </div>
+
+                </div>
+            </div>
+            <!-- 二级菜单 -->
+            <div class="nav-menu">
+                <div @click="goToPage('./people.html')" class="nav-menu-item">
+                    人：People
+                </div>
+                <div @click="goToPage('./events.html')" class="nav-menu-item">
+                    事：Events
+                </div>
+                <div @click="goToPage('./object.html')" class="nav-menu-item">
+                    物：Object
+                </div>
+                <div @click="goToPage('./space.html')" class="nav-menu-item">
+                    场：Space
+                </div>
+            </div>
+            <!-- 主体内容 -->
+            <div class="main-body">
+                <div class="detail-box">
+                    <div class="detail-box_title">
+                        {{initProjectData.title}}
+                        <span class="detail-box_titleDescription" v-if="initProjectData.titleDescription">{{initProjectData.titleDescription}}</span>
+                        <span v-if="initProjectData.titleLink" class="detail-box_titleLink">
+                            <span v-for="itemLink in initProjectData.titleLink" :key="itemLink.link">
+                                <a download="" :href="itemLink.link">{{itemLink.name}}</a>
+                            </span>
+                            
+                        </span>
+                    </div>
+                    <div class="detail-box_time">
+                        {{initProjectData.time}}
+                    </div>
+                    <div class="detail-box_anthor">
+                        {{initProjectData.anthor}}
+                    </div>
+                    <div class="detail-box_awardlist">
+                        <div class="detail-box_awarditem" v-for="(awardItem,index) in initProjectData.award"
+                            :key="index">
+                            <div class="box_awarditem_time">{{awardItem.time}}
+                                <div class="box_awarditem_place">{{awardItem.place || ''}}</div>
+
+                            </div>
+                            <div class="box_awarditem_desc">{{awardItem.desc}}</div>
+
+
+                        </div>
+                    </div>
+
+                    <!-- introduction -->
+                    <div class="detail-box_baseTitle">
+                        Introduction
+                    </div>
+                    <div class="detail-box_introduction">
+                        {{initProjectData.introduction.text}}
+                    </div>
+                    <div v-if="initProjectData.introduction.buttonGroup.length" class="detail-box_introduction_btn">
+                        <div class="box_introduction_btn_outer"
+                            v-for="(btn,index) in initProjectData.introduction.buttonGroup" :key="index">
+                            <a download="" v-if="btn.link" target="_blank" :href="btn.link">{{btn.text}}</a>
+                            <span v-else>{{btn.text}}</span>
+
+                        </div>
+
+                    </div>
+                    <!-- contant -->
+
+                    <div class="detail-box_contant">
+                        <div class="detail-box_contantItem" v-for="(contantItem,index) in initProjectData.contant"
+                            :key="index">
+                            <div v-if="contantItem.type === 'Title'" class="detail-box_baseTitle">
+                                {{contantItem.text}}
+                            </div>
+                            <div v-if="contantItem.type === 'miniTitle'" class="detail-box_miniTitle">
+                                {{contantItem.text}}
+                            </div>
+                            <div v-if="contantItem.type === 'video'" class="box_contantItem_img" style="width: 100%;height:725px;">
+                                <!-- <video :src="contantItem.link" alt=""> -->
+                                <iframe :src="contantItem.link" style="width: 100%;height:725px;" scrolling="no"
+                                    frameborder="0" allowfullscreen="" ></iframe>
+                            </div>
+                            <div v-if="contantItem.type === 'img'" class="box_contantItem_img">
+                                <img :src="contantItem.link" alt="" :style="contantItem.style||''">
+                            </div>
+                            <div v-if="contantItem.type === 'center-text'" class="box_contantItem_centerText">
+                                {{contantItem.text}}
+                            </div>
+                            <!-- <div v-else class="box_contantItem_desc">{{contantItem.text}}</div> -->
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        const { createApp, ref } = Vue
+
+        createApp({
+            setup() {
+                const initProjectData = ref({})
+                const getUrlParams = () => {
+                    const searchParams = new URLSearchParams(window.location.search);
+                    const params = {};
+                    for (const [key, value] of searchParams.entries()) {
+                        params[key] = value;
+                    }
+                    return params;
+                }
+                const getProjectInfo = () => {
+                    const ProjectId = getUrlParams().ProjectId || 1
+                    const projectData = projectInfoData['project' + ProjectId]
+                    console.log(projectData)
+                    initProjectData.value = projectData
+                }
+                getProjectInfo()
+                const goToPage = (path) => {
+                    // if (path === '/') {
+                    //     window.location.href = window.location.origin
+                    // } else {
+                    //     window.location.href = path + '.html'
+
+                    // }
+                    window.location.href = path
+
+                }
+                return {
+                    goToPage,
+                    initProjectData
+                }
+            }
+        }).mount('#app')
+    </script>
+
+<script src="./js/resize.js"></script></body>
+
+</html>

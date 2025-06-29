@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luoshan's homepage</title>
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/space.css" />
+</head>
+
+<body>
+  <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+  <script src="./js/vue.global.js"></script>
+
+  <div id="app">
+    <div class="main">
+      <!-- 菜单 -->
+      <div class="header">
+        <div class="header-left">
+          <div class="header-name">LUO SHAN</div>
+          <div class="header-email">luoshan3398@qq.com</div>
+        </div>
+        <div class="header-right">
+          <div @click="goToPage('./index.html')" class="header-menu">
+            Home
+          </div>
+          <div @click="goToPage('./project.html')" class="header-menu select">
+            Project
+          </div>
+        </div>
+      </div>
+      <!-- 二级菜单 -->
+      <div class="nav-menu">
+        <div @click="goToPage('./people.html')" class="nav-menu-item">
+          人：People
+        </div>
+        <div @click="goToPage('./events.html')" class="nav-menu-item">
+          事：Events
+        </div>
+        <div @click="goToPage('./object.html')" class="nav-menu-item">
+          物：Object
+        </div>
+        <div @click="goToPage('./space.html')" class="nav-menu-item select">
+          场：Space
+        </div>
+      </div>
+      <!-- 主体内容 -->
+      <div class="main-body">
+        <div class="main-body-desc">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setting up the stage is
+          the most frequent task I've undertaken in recent years, and there's
+          a lot of finesse involved here. How do you get all stakeholders to
+          be willing to participate? How do you make the snowball effect
+          happen? By talking to A about B and to B about A, the matter might
+          just come to fruition. In the end, you also need to create momentum,
+          and make it substantial, so that the internet ecosystem starts to
+          operate. The basic way to play the game is like this, but there is
+          still a need for some fundamental, underlying elements, a good
+          design.
+        </div>
+
+        <div class="main-body-desc-ch" style="margin-top: 74px">
+          搭场子，是这几年干的最多的事情，其实这里非常有讲究，如何让所有利益既得者都愿意参与进来？如何滚雪球？拿A和B说，拿B和A说，这事或许就成了。最后你还要造势，造的大大的，互联网生态圈开始运转。游戏的玩法基本上是这样子，不过还是需要一些底层、最本质的东西，一个好设计。
+        </div>
+
+
+        <div class="project-img-box">
+          <img class="img-size-2" src="./image/project/project-7.png" alt=""
+            @click="goToPage('./detail.html?ProjectId=9')" />
+          <img class="img-size-1" src="./image/project/project-8.png" alt=""
+            @click="goToPage('./detail.html?ProjectId=10')" />
+
+          <!-- <img
+              class="img-size-3"
+              src="./image/project/project-11.png"
+              alt=""
+              
+            /> -->
+          <img class="img-size-3" src="./image/project/project-12.png" alt=""
+            @click="goToPage('./detail.html?ProjectId=11')" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const { createApp, ref } = Vue;
+
+    createApp({
+      setup() {
+        const goToPage = (path) => {
+          // if (path === '/') {
+          //     window.location.href = window.location.origin
+          // } else {
+          //     window.location.href = path + '.html'
+
+          // }
+          window.location.href = path;
+        };
+        return {
+          goToPage,
+        };
+      },
+    }).mount("#app");
+  </script>
+<script src="./js/resize.js"></script></body>
+
+</html>

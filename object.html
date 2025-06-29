@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luoshan's homepage</title>
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/object.css" />
+  </head>
+
+  <body>
+    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+    <script src="./js/vue.global.js"></script>
+
+    <div id="app">
+      <div class="main">
+        <!-- 菜单 -->
+        <div class="header">
+          <div class="header-left">
+            <div class="header-name">LUO SHAN</div>
+            <div class="header-email">luoshan3398@qq.com</div>
+          </div>
+          <div class="header-right">
+            <div @click="goToPage('./index.html')" class="header-menu">
+              Home
+            </div>
+            <div @click="goToPage('./project.html')" class="header-menu select">
+              Project
+            </div>
+          </div>
+        </div>
+        <!-- 二级菜单 -->
+        <div class="nav-menu">
+          <div @click="goToPage('./people.html')" class="nav-menu-item">
+            人：People
+          </div>
+          <div @click="goToPage('./events.html')" class="nav-menu-item ">
+            事：Events
+          </div>
+          <div @click="goToPage('./object.html')" class="nav-menu-item select">
+            物：Object
+          </div>
+          <div @click="goToPage('./space.html')" class="nav-menu-item">
+            场：Space
+          </div>
+        </div>
+        <!-- 主体内容 -->
+        <div class="main-body">
+          <div class="main-body-desc">
+            Regrettably, it seems that I do not possess the craftsman spirit of "investigating things to achieve knowledge." I have conducted relatively little specialized research on a single object. I have chosen to present here a "spherical magic carpet" for aerial camping.
+          </div>
+
+          <div class="main-body-desc-ch" style="margin-top: 74px">
+            遗憾，貌似我不具有“格物致知”的匠人精神，对一个物体的专门的研究比较少，我挑选了一个空中露营的“球形魔毯”放在这里。
+          </div>
+
+          <div class="project-img-box">
+            <img
+              class="img-size-1"
+              src="./image/project/project-10.png"
+              alt=""
+              @click="goToPage('./detail.html?ProjectId=8')"
+
+            />
+            
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const { createApp, ref } = Vue;
+
+      createApp({
+        setup() {
+          const goToPage = (path) => {
+            
+            window.location.href = path;
+          };
+          return {
+            goToPage,
+          };
+        },
+      }).mount("#app");
+    </script>
+  <script src="./js/resize.js"></script></body>
+</html>

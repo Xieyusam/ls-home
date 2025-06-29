@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luoshan's homepage</title>
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body>
+  <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+  <script src="./js/vue.global.js"></script>
+
+  <div id="app">
+    <div class="main">
+      <!-- 菜单 -->
+      <div class="header">
+        <div class="header-left">
+          <div class="header-name">LUO SHAN</div>
+          <div class="header-email">luoshan3398@qq.com</div>
+        </div>
+        <div class="header-right">
+          <div @click="goToPage('./index.html')" class="header-menu select">
+            Home
+          </div>
+          <div @click="goToPage('./project.html')" class="header-menu">
+            Project
+          </div>
+        </div>
+      </div>
+      <!-- 主体内容 -->
+      <div class="main-body">
+        <div class="main-body-1">
+          <img class="bg" src="./image/bg/index-bg-1.png" alt="" />
+          <div class="inner">
+            <div class="inner-left">
+              <div class="text">
+                I graduated with a master's degree from the China Academy of Art, Majoring in equal design between the
+                blind and the sighted. Studied under Professor <a href="https://www.caa.edu.cn/sz/zzjs/wangyun/zuopin/index.html">Wang Yun</a>. I have served as a product manager at an AI
+                company：<a href="https://www.caa.edu.cn/sz/zzjs/wangyun/zuopin/index.html">MINDVERSE</a> for half a year and am currently a researcher in the field of accessibility at the
+                China Academy of Art.
+                My research direction is to explore the imbalances and fairness that exist between blind and sighted
+                individuals in different relationships, and to design systematic solutions through creative and fun game
+                interactions for daily communication scenarios between the blind and the sighted.
+                My research strengths lie in the innovative design thinking that integrates art and technology,
+                achieving humanistic creative solutions through intelligent systems. I hope that design can use
+                technology to build more bridges between people with disabilities and society. <span style="font-weight: 600;">I am applying for a PhD
+                in human-computer interaction and an academic internship.</span>
+              </div>
+              <div class="btn-grey">
+                <a href="./file/luoshan CV.pdf" download="luoshan CV.pdf">
+                  DOWNLOAD CV
+                </a>
+              </div>
+            </div>
+            <div class="inner-right">
+              <img style="height: 340px; width: 349px; z-index: 99" src="./image/index/1.png" alt="" />
+              <div class="info">
+                <span class="text-icon" style="margin-right: 4px">📧</span>
+                luoshan3398@qq.com
+              </div>
+              <div class="info">
+                <img style="
+                      margin-left: 2px;
+                      margin-right: 6px;
+                      height: 21px;
+                      width: 21px;
+                    " src="./image/index/redbook.png" alt="" />Design Vlogger : <a
+                  href="https://www.xiaohongshu.com/user/profile/5a8119e511be1037e71268fe?xhsshare=CopyLink&appuid=5a8119e511be1037e71268fe&apptime=1719406961"
+                  target="_blank">山岭静悄悄</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-body-2">
+          <img class="bg" src="./image/bg/index-bg-1.png" alt="">
+          <div class="body-title">NEWS/THINKING</div>
+          <div class="body-list">
+            <div class="body-list-item">
+              <div class="time">Feb 25 2025</div>
+              <div class="desc">
+                The research project "Hearing the Smiles" was accepted as a poster presentation by both the IEEE
+                Conference on Virtual Reality (IEEE VR) and the Augmented Human International Conference (AH) in
+                previous years.
+              </div>
+            </div>
+
+            <div class="body-list-item">
+              <div class="time">Feb 20 2025</div>
+              <div class="desc">
+                A new research project on the unfamiliar relationships between visually impaired individuals and sighted
+                people has been launched! </div>
+            </div>
+
+            <div class="body-list-item">
+              <div class="time">Feb 10 2025</div>
+              <div class="desc">
+                An AI-powered dream exploration game has recently been developed and is currently undergoing closed beta
+                testing in China.
+              </div>
+            </div>
+            <div class="body-list-item">
+              <div class="time">July 13 2024</div>
+              <div class="desc">
+                Our series of accessible works is about to be invited to be exhibited at the UNITE 2024 Developers
+                Conference.
+              </div>
+            </div>
+            <div class="body-list-item">
+              <div class="time">July 12 2024</div>
+              <div class="desc">
+                I am delighted that our work "Foldiverse" has been accepted for The CHI PLAY 2024 Student Game Design
+                Competition!
+              </div>
+            </div>
+            <div class="body-list-item">
+              <div class="time">July 13 2024</div>
+              <div class="desc">
+                I am delighted that my work "Hearing The Bullseye" has been accepted for The ASSETS 2024 Poster!
+              </div>
+            </div>
+            <div class="body-list-item">
+              <div class="time">July 12 2024</div>
+              <div class="desc">
+                I am delighted that my work "Hearing The Bullseye" has been accepted for The CHI PLAY 2024 Student Game
+                Design Competition!
+              </div>
+            </div>
+            <div class="body-list-item">
+              <div class="time">July 03 2024</div>
+              <div class="desc">
+                I am delighted that my work "Hearing The Bullseye" has been accepted for the CSCW 2024 demo!
+              </div>
+            </div>
+            <div class="body-list-item">
+              <div class="time">June 15 2024</div>
+              <div class="desc">
+                The 'Melody of Hearing Smiles' is almost ready! Just thinking about the background music that plays when
+                the blind see me smiling makes me really happy!
+              </div>
+            </div>
+            <div class="body-list-item">
+              <div class="time">June 10 2024</div>
+              <div class="desc">
+                Received the task from the China Design Museum to compile the 'White Paper on Artificial Intelligence
+                Design‘.
+              </div>
+            </div>
+            <div class="body-list-item">
+              <div class="time">May 13 2024</div>
+              <div class="desc">
+                Participated in the 2024 CHI conference work shop.
+              </div>
+            </div>
+            <div class="body-list-item">
+              <div class="time">May 13 2024</div>
+              <div class="desc">
+                Delighted to receive the 'Big and Small Matters' general mobilization organized by Xiaohongshu and the
+                China Disabled Persons' Welfare Foundation.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-body-3">
+          <!-- <img class="bg" src="./image/bg/index-bg-1.png" alt="" /> -->
+          <div class="body-title">REPORT</div>
+          <div class="body-list">
+            <div class="body-list-item">
+              <div class="desc">
+                China Youth Daily(中国青年报）
+                <a target="_blank"
+                  href="https://s.cyol.com/shuzibao/cmsfile/cms_json/zqzx/Newspaper/2/2023-06-20/Content/nw.D110000zgqnb_20230620_1-08.html?isshow=1">”This
+                  Post-95s Girl Uses AI to Help Blind and Able-bodied
+                  People...”</a>
+              </div>
+
+              <div class="time">June 20 2023</div>
+            </div>
+            <div class="body-list-item">
+              <div class="desc">
+                Today’s Headlines,（今日头条）<a target="_blank"
+                  href="https://www.toutiao.com/article/7249684534952952320/?app=news_article&timestamp=1687951975&use_new_style=1&req_id=20230628193255777F96E3F27C4E0FE387&group_id=7249684534952952320&wxshare_count=3&tt_from=weixin&utm_source=weixin&utm_medium=toutiao_android&utm_campaign=client_share&share_token=a0d4e26a-3215-4811-8199-16e9402c372d&source=m_redirect&wid=1719184658167">
+                  ”Post-95s Girl Develops ’Sunny Blind Co-Play’
+                  Shooting...”</a>
+              </div>
+              <div class="time">June 28 2023</div>
+            </div>
+            <div class="body-list-item">
+              <div class="desc">
+                Zhejiang News（浙江新闻）
+                <a target="_blank"
+                  href="https://s.cyol.com/shuzibao/cmsfile/cms_json/zqzx/Newspaper/2/2023-06-20/Content/nw.D110000zgqnb_20230620_1-08.html?isshow=1">”Archery
+                  with Ears as Eyes.”</a>
+              </div>
+              <div class="time">May 15 2021</div>
+            </div>
+            <div class="body-list-item">
+              <div class="desc">
+                Xiaohongshu Social Media, Hot Search List（小红书热搜榜）
+                <a target="_blank"
+                  href="https://www.xiaohongshu.com/explore/64855bd300000000130330ad?app_platform=ios&app_version=8.40&share_from_user_hidden=true&xsec_source=app_share&type=normal&xsec_token=CBwX-o9AkgjIDgN4HS705HuxGSShm5nMUuf92LZBUcnek=&author_share=1&xhsshare=CopyLink&shareRedId=N0c6MTQ-ST43OEdHOjgzPUs6Ojk6PUxO&apptime=1718987239&exSource=">“Hot
+                  Search with 500w Traffic...”</a>
+              </div>
+              <div class="time">June 11 2023</div>
+            </div>
+            <div class="body-list-item">
+              <div class="desc">
+                HFA Community
+                <a target="_blank" href="https://mp.weixin.qq.com/s/t0VBd2m6I4VosQXeeebcFQ">"In the senior Guomei, one
+                  can see the highest state of
+                  'being competitive without realizing it."</a>
+              </div>
+              <div class="time">April 26 2024</div>
+            </div>
+            <div class="body-list-item">
+              <div class="desc">
+                Human Pixels（人间像素）<a target="_blank" href="">”Hearing, This Colorful World.”</a>
+              </div>
+              <div class="time">June 29 2023</div>
+            </div>
+          </div>
+        </div>
+        <div class="main-body-4">
+          <img class="bg" src="./image/bg/index-bg-1.png" alt="" />
+
+          <div class="body-title">EXHIBITION/AWARD</div>
+          <div class="body-list">
+            <div class="body-list-item">
+              <div class="time">
+                Dec 27 2023
+                <div class="where">Hangzhou</div>
+              </div>
+              <div class="desc">
+                ShangHai West Bund Art And Design Expo, A Live-action CS Sound
+                Shooting Game App.
+              </div>
+            </div>
+
+            <div class="body-list-item">
+              <div class="time">
+                June 01 2023
+                <div class="where">Hangzhou</div>
+              </div>
+              <div class="desc">
+                Zhejiang Exhibition Hall, A Live-action CS Sound Shooting Game
+                App.
+              </div>
+            </div>
+
+            <div class="body-list-item">
+              <div class="time">
+                July 15 2023
+                <div class="where">Guangzhou</div>
+              </div>
+              <div class="desc">
+                Hong Kong University of Science and Technology, A Live-action
+                CS Sound Shooting Game.
+              </div>
+            </div>
+
+            <div class="body-list-item">
+              <div class="time">
+                Dec 15 2022
+                <div class="where">Shenzhen</div>
+              </div>
+              <div class="desc">
+                4th China Design Exhibition and Public Art Special Exhibition,
+                Hearing The Bullseye.
+              </div>
+            </div>
+
+            <div class="body-list-item">
+              <div class="time">
+                March 15 2022
+                <div class="where">Dutch</div>
+              </div>
+              <div class="desc">Dutch Design Week, Hearing The Bullseye.</div>
+            </div>
+
+            <div class="body-list-item">
+              <div class="time">
+                June 15 2021
+                <div class="where">Shaoxing</div>
+              </div>
+              <div class="desc">
+                Beyond the Realm Exhibition: Design Intellegence Center
+                Honorable Mentions, Hearing The Bullseye.
+              </div>
+            </div>
+
+            <div class="body-list-item">
+              <div class="time">Dec 25 2022</div>
+              <div class="desc">
+                Gold Award, 13th International User Experience Competition
+                (UXDA, UXPA).
+              </div>
+            </div>
+
+            <div class="body-list-item">
+              <div class="time">Dec 18 2022</div>
+              <div class="desc">
+                Finalist, World Summit on the Information Society (WSIS) Award
+                Nomination.
+              </div>
+            </div>
+
+            <div class="body-list-item">
+              <div class="time">May 15 2022</div>
+              <div class="desc">
+                Finalist, OPPO Global ”Smile Proposal” Finalist Award.
+              </div>
+            </div>
+
+            <div class="body-list-item">
+              <div class="time">Dec 22 2021</div>
+              <div class="desc">
+                Honorable Mention, DIA China Design Intelligent Manufacturing
+                Award.
+              </div>
+            </div>
+
+            <div class="body-list-item">
+              <div class="time">June 15 2018</div>
+              <div class="desc">
+                Third Prize, Hunan Province Internet Plus College Students
+                Innovation and Entrepreneurs.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="research-box">
+          <div class="title">RESEACH</div>
+          <div class="research-list">
+            <div class="research-list-item">
+              <div class="research-list-img">
+                <img @click="goToPage('./detail.html?ProjectId=1')" style="width: 400px; height: 250px"
+                  src="./image/index/research-7.png" alt="" />
+              </div>
+              <div class="research-list-contant">
+                <div class="contant-title">
+                  Hearing the Bullseye: An Auditory-Cued Archery Exergame for
+                  the Visually Impaired and Their Sighted Family and Friends.
+                  <!-- <span class="title-grey">(under review)</span> -->
+                </div>
+                <div class="from">
+                  Design Intelligence Project, Alibaba Cloud Design × China
+                  Academy of Art. 2021
+                </div>
+
+                <div class="author">Shan Luo*, Jianan Liu, Botao Hu.</div>
+                <div class="desc">
+                  Abstract：How can blind and sighted individuals play
+                  together? The natural disparity in visual abilities often
+                  poses challenges for fair competition in social play. This
+                  can diminish the confidence of visually impaired (VI)
+                  individuals and reduce engagement for sighted players. While
+                  previous literature has incorporated fairness design
+                  strategies for the VI, we additionally aim to address the
+                  potential problem of boredom for sighted players by
+                  providing enhanced visual feedback without compromising
+                  fairness as a novel design strategy...
+                </div>
+                <div class="link-btn">
+                  <a target="_blank"
+                    href="https://www.cnki.net/KCMS/detail/detail.aspx?dbcode=CMFD&dbname=CMFDTEMP&filename=1023869142.nh&uniplatform=OVERSEA&v=ws4K4XfH7_3EKQErgk0w19O6LURW8xiJxrVEQZiMEFOJ5ccIRNY3W0DLuGQ7zwo7">CNKI’23</a>
+                  <a target="_blank" href="https://programs.sigchi.org/chi/2024/program/session/155687">CHI WORKSHOP’2024
+                  </a>
+                  <a target="_blank" href="https://doi.org/10.1145/3663548.3688510">ASESSTS’2024</a>
+                  <div class="link-text">
+                    Utility model patent, No: ZL202110530004.0.
+                  </div>
+                  <a target="_blank" href="https://doi.org/10.1145/3665463.3678829">CHI PLAY2024</a>
+                  <a target="_blank" href="https://doi.org/10.1145/3678884.3681814">CSCW’2024</a>
+                  <a download="Hearing_the_Bullseye___CHI_Play_2024_Student_Competition .pdf" href="./file/Hearing_the_Bullseye___CHI_Play_2024_Student_Competition .pdf">PDF</a>
+                </div>
+              </div>
+            </div>
+            <div class="research-list-item">
+              <div class="research-list-img">
+                <img @click="goToPage('./detail.html?ProjectId=2')" style="width: 400px; height: 250px"
+                  src="./image/index/research-4.png" alt="" />
+              </div>
+              <div class="research-list-contant">
+                <div class="contant-title">
+                  Family-centered simple sound shooting interaction game
+                  .<span class="title-grey">(under review)</span>
+                </div>
+                <div class="from">
+                  Design Innovation Center, China Academy of Art. 2023
+                </div>
+                <div class="author">Shan Luo*, Yun Wang.</div>
+                <div class="desc">
+                  Abstract：For visually impaired individuals from less
+                  affluent backgrounds, obtaining an experience that allows
+                  them to play quickly with sighted people is quite
+                  extravagant. How can we enable blind individuals to play
+                  with their family and friends in a cost-effective manner? to
+                  make the experience of equal competition more
+                  family-centered for blind individuals, we simplified the
+                  previous archery game into a paper version, which can be
+                  easily operated with just a smartphone and paper. This app
+                  facilitates sound-based CS shooting games for both blind and
+                  sighted players.
+                </div>
+                <div class="link-btn">
+                  <div class="link-btn-item">ASESSTS POSTER</div>
+                  <div class="link-text">
+                    National Innovation and Entrepreneurship Project:
+                    202210355061.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="research-list-item">
+              <div class="research-list-img">
+                <img @click="goToPage('./detail.html?ProjectId=4')" style="width: 400px; height: 250px"
+                  src="./image/index/research-5.png" alt="" />
+              </div>
+              <div class="research-list-contant">
+                <div class="contant-title">
+                  "Hearing the Smile" — See Sing: Speculating an AI-Mediated Reality for the Visually Impaired.<span
+                    class="title-grey">
+                    (Working in process)</span>
+                </div>
+                <div class="from">
+                  Design Innovation Center, China Academy of Art. 2024
+                </div>
+                <div class="author">Shan Luo*, Jianan Liu.</div>
+                <div class="desc">
+                  Abstract：How can we allow blind individuals to "see" the
+                  smiles of strangers? In social moments, the reason for
+                  promoting communication between the visually impaired and
+                  sighted people may be due to non-verbal gestures or
+                  expressions, which are very important in the social process.
+                  We focus on the smile at the beginning of social
+                  interactions and transform it into the background music of
+                  the destined encounter moment in a TV drama, so that every
+                  encounter can hear the melody of a smile.
+                </div>
+              </div>
+            </div>
+            <div class="research-list-item">
+              <div class="research-list-img">
+                <img @click="goToPage('./detail.html?ProjectId=3')" style="width: 400px; height: 250px"
+                  src="./image/index/research-6.png" alt="" />
+              </div>
+              <div class="research-list-contant">
+                <div class="contant-title">AI Makeup Box for the Blind.</div>
+                <div class="from">
+                  Design Innovation Center, China Academy of Art. 2021
+                </div>
+                <div class="author">
+                  Wang Xinran, Lv Jiuya, Zheng Bowen, Qin Zihan, Shan Luo*.
+                </div>
+                <div class="desc">
+                  Abstract：This is a makeup box for the blind developed in
+                  2021. It uses a camera to recognize facial features,
+                  including lips, eyes, and facial contours, and applies AI
+                  small sample models to provide makeup suggestions for the
+                  blind. Due to the slow development of large language models
+                  in the early stages of the project, few-shot learning was
+                  used for training at that time. Looking back with today's
+                  technological advancements, this work still holds historical
+                  significance. It was the first time we realized that the
+                  pursuit of beauty is not related to sensory perception but
+                  is an intrinsic human impulse.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div @click="goToPage('./project.html')" class="more-btn">
+            More Research Project···
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const { createApp, ref } = Vue;
+
+    createApp({
+      setup() {
+        const goToPage = (path) => {
+          // if (path === '/') {
+          //     window.location.href = window.location.origin
+          // } else {
+          //     window.location.href = path + '.html'
+
+          // }
+          window.location.href = path;
+        };
+        return {
+          goToPage,
+        };
+      },
+    }).mount("#app");
+  </script>
+  <script src="./js/resize.js"></script>
+</body>
+
+</html>
