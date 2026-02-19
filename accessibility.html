@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luoshan's homepage</title>
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/accessibility.css" />
+</head>
+
+<body>
+  <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+  <script src="./js/vue.global.js"></script>
+  <script src="./js/projectInfo.js"></script>
+
+  <div id="app">
+    <div class="main">
+      <!-- 菜单 -->
+      <div class="header">
+        <div class="header-left">
+          <div class="header-name">LUO SHAN</div>
+          <div class="header-email">luoshan3398@qq.com</div>
+        </div>
+        <div class="header-right">
+          <div @click="goToPage('./index.html')" class="header-menu">
+            Home
+          </div>
+          <div @click="goToPage('./project.html')" class="header-menu select">
+            Project
+          </div>
+        </div>
+      </div>
+      <!-- 二级菜单 -->
+      <div class="nav-menu">
+        <div @click="goToPage('./accessibility.html')" class="nav-menu-item select">Accessibility</div>
+        <div @click="goToPage('./game.html')" class="nav-menu-item">Game</div>
+        <div @click="goToPage('./more-than-human.html')" class="nav-menu-item">More than Human</div>
+        <div @click="goToPage('./channel.html')" class="nav-menu-item">Channel</div>
+        <div @click="goToPage('./interesting.html')" class="nav-menu-item">Interesting</div>
+      </div>
+      <!-- 主体内容 -->
+      <div class="main-body">
+        <div class="main-body-title">Exploring the imbalance</div>
+        <div class="main-body-title-mini">
+          between blind and sighted individuals in different relationship
+        </div>
+        <img src="./image/people/people-1.png" style="width: 100%;margin: 74px 0px;">
+        <div class="main-body-desc">
+          Building a bridge between visually impaired individuals and sighted people can be broken down into specific
+          areas.In different relationships, there is a secondary imbalance and unfairness between the visually impaired
+          and the sighted. In family relationships, this imbalance is due to a lack of interaction and opportunities to
+          demonstrate one's abilities. How can they play together? How can one tell their loved one that they can also
+          prepare a perfect meal? How can they play video games with their son and still win? In unfamiliar
+          relationships, the most critical issue for both parties is the lack of social encounters. Did someone just
+          smile at me? Did they offer a handshake? What does it mean to make a "V" sign in a group photo? In the pursuit
+          of individualized spiritual levels, they need to have an identity and interest recognition that transcends the
+          person themselves. We are all people who love beauty, we are all pursuers of art, and we can all take perfect
+          photographs...
+          <br>I am preparing the direction of future research according to this line of thinking and summarizing
+          existing works into a collection.
+        </div>
+
+        <div class="main-body-desc-ch" style="margin-top: 74px;">
+          搭建视障人士和明眼人之间的桥梁是可以被细分的。视障人士和明人在不同的关系中其次存在着不同类型的不平衡、不公平，在家人关系中，这种不平衡是缺少互动和展示自己的能力的机会，如何一起玩耍？如何告诉爱人我也可以做出完美的一餐？如何和儿子一起打电子游戏还能赢？在陌生关系中两方最关键的则是缺少社交相遇时刻，刚刚是有人对我微笑吗？他是不是向我握手了？合照的时候比✌️是什么意思呢？在追求个性化的精神层中，他们需要有脱离人本身的身份人认知，兴趣认知。我们都是爱美的人，我们都是艺术的追求者，我们都可以拍出完美的摄影照片···
+          <br>我按照这种思路准备未来研究的方向，并将已有的作品归纳在册。
+        </div>
+
+        <div class="project-img-box">
+          <template v-for="(project, index) in sortedProjects" :key="project.id">
+            <img 
+              @click="goToPage('./detail.html?ProjectId=' + project.id)" 
+              :class="'img-size-' + ((index % 3) + 1)"
+              :src="project.coverImage" 
+              alt="">
+          </template>
+          <div v-for="n in emptyCells" :key="'empty-'+n" class="img-size-3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const { createApp, ref, computed } = Vue;
+
+    createApp({
+      setup() {
+        const projects = ref(Object.values(projectInfoData).filter(p => p.category === 'Accessibility'));
+
+        const sortedProjects = computed(() => {
+          return [...projects.value].sort((a, b) => {
+            return (a.sortOrder || 0) - (b.sortOrder || 0);
+          });
+        });
+
+        const emptyCells = computed(() => {
+          const len = sortedProjects.value.length;
+          const remainder = len % 3;
+          return remainder === 0 ? 0 : 3 - remainder;
+        });
+
+        const goToPage = (path) => {
+          window.location.href = path;
+        };
+        return {
+          goToPage,
+          sortedProjects,
+          emptyCells
+        };
+      },
+    }).mount("#app");
+  </script>
+<script src="./js/resize.js"></script></body>
+
+</html>

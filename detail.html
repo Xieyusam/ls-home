@@ -40,31 +40,30 @@
             </div>
             <!-- 二级菜单 -->
             <div class="nav-menu">
-                <div @click="goToPage('./people.html')" class="nav-menu-item">
-                    人：People
-                </div>
-                <div @click="goToPage('./events.html')" class="nav-menu-item">
-                    事：Events
-                </div>
-                <div @click="goToPage('./object.html')" class="nav-menu-item">
-                    物：Object
-                </div>
-                <div @click="goToPage('./space.html')" class="nav-menu-item">
-                    场：Space
-                </div>
+                <div @click="goToPage('./accessibility.html')" class="nav-menu-item">Accessibility</div>
+                <div @click="goToPage('./game.html')" class="nav-menu-item">Game</div>
+                <div @click="goToPage('./more-than-human.html')" class="nav-menu-item">More than Human</div>
+                <div @click="goToPage('./channel.html')" class="nav-menu-item">Channel</div>
+                <div @click="goToPage('./interesting.html')" class="nav-menu-item">Interesting</div>
             </div>
             <!-- 主体内容 -->
             <div class="main-body">
                 <div class="detail-box">
                     <div class="detail-box_title">
                         {{initProjectData.title}}
-                        <span class="detail-box_titleDescription" v-if="initProjectData.titleDescription">{{initProjectData.titleDescription}}</span>
+                        <a class="detail-box_titleDescription" v-if="initProjectData.titleDescription && initProjectData.titleDescriptionLink" :href="initProjectData.titleDescriptionLink" target="_blank" style="text-decoration: underline; color: #989898;">{{initProjectData.titleDescription}}</a>
+                        <span class="detail-box_titleDescription" v-else-if="initProjectData.titleDescription">{{initProjectData.titleDescription}}</span>
                         <span v-if="initProjectData.titleLink" class="detail-box_titleLink">
                             <span v-for="itemLink in initProjectData.titleLink" :key="itemLink.link">
                                 <a download="" :href="itemLink.link">{{itemLink.name}}</a>
                             </span>
                             
                         </span>
+                    </div>
+                    <div class="detail-box_linkGroup" v-if="initProjectData.linkGroup && initProjectData.linkGroup.length">
+                        <a v-for="(linkItem, index) in initProjectData.linkGroup" :key="index" :href="linkItem.link" target="_blank">
+                            {{linkItem.text}}
+                        </a>
                     </div>
                     <div class="detail-box_time">
                         {{initProjectData.time}}

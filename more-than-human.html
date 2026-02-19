@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luoshan's homepage</title>
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/more-than-human.css" />
+</head>
+
+<body>
+  <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+  <script src="./js/vue.global.js"></script>
+  <script src="./js/projectInfo.js"></script>
+
+  <div id="app">
+    <div class="main">
+      <!-- 菜单 -->
+      <div class="header">
+        <div class="header-left">
+          <div class="header-name">LUO SHAN</div>
+          <div class="header-email">luoshan3398@qq.com</div>
+        </div>
+        <div class="header-right">
+          <div @click="goToPage('./index.html')" class="header-menu">
+            Home
+          </div>
+          <div @click="goToPage('./project.html')" class="header-menu select">
+            Project
+          </div>
+        </div>
+      </div>
+      <!-- 二级菜单 -->
+      <div class="nav-menu">
+        <div @click="goToPage('./accessibility.html')" class="nav-menu-item">Accessibility</div>
+        <div @click="goToPage('./game.html')" class="nav-menu-item">Game</div>
+        <div @click="goToPage('./more-than-human.html')" class="nav-menu-item select">More than Human</div>
+        <div @click="goToPage('./channel.html')" class="nav-menu-item">Channel</div>
+        <div @click="goToPage('./interesting.html')" class="nav-menu-item">Interesting</div>
+      </div>
+      <!-- 主体内容 -->
+      <div class="main-body">
+
+        <div class="main-body-desc">
+          While working on 'More Than Human,' I raised many questions. As the saying goes, 'You are not a fish; how do
+          you know the happiness of the fish?' When we design for non-human beings, how can we know what their true
+          needs are? Do mushroom spores really want to see things this way? Do plants really want to sing in these
+          melodies? Perhaps what matters is that we are further building bridges between humans and non-humans, helping
+          the broader public to understand more and continuously expand their perceptions—rather than seeking unchanging
+          truths.
+        </div>
+
+        <div class="main-body-desc-ch" style="margin-top: 74px;">
+          我在做more than human的时候，发出了很多疑问。
+          子非鱼安知鱼之乐，我们为非人类做设计，怎么知道这是他们的真需求？蘑菇的孢子视觉真的想这样子吗？植物唱歌真的是这种旋律吗？或许重要是，我们在进一步的建立人类和非人类的桥梁，让社会大众进一步的了解，不断的拓展认知，而不是一成不变的真相。
+        </div>
+
+        <div class="project-img-box">
+          <template v-for="(project, index) in sortedProjects" :key="project.id">
+            <img @click="goToPage('./detail.html?ProjectId=' + project.id)" :class="'img-size-' + ((index % 3) + 1)"
+              :src="project.coverImage" alt="">
+          </template>
+          <div v-for="n in emptyCells" :key="'empty-'+n" class="img-size-3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const { createApp, ref, computed } = Vue;
+
+    createApp({
+      setup() {
+        const projects = ref(Object.values(projectInfoData).filter(p => p.category === 'More than Human'));
+
+        const sortedProjects = computed(() => {
+          return [...projects.value].sort((a, b) => {
+            return (a.sortOrder || 0) - (b.sortOrder || 0);
+          });
+        });
+
+        const emptyCells = computed(() => {
+          const len = sortedProjects.value.length;
+          const remainder = len % 3;
+          return remainder === 0 ? 0 : 3 - remainder;
+        });
+
+        const goToPage = (path) => {
+          window.location.href = path;
+        };
+        return {
+          goToPage,
+          sortedProjects,
+          emptyCells
+        };
+      },
+    }).mount("#app");
+  </script>
+  <script src="./js/resize.js"></script>
+</body>
+
+</html>

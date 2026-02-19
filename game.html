@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luoshan's homepage</title>
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/game.css" />
+</head>
+
+<body>
+  <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+  <script src="./js/vue.global.js"></script>
+  <script src="./js/projectInfo.js"></script>
+
+  <div id="app">
+    <div class="main">
+      <!-- 菜单 -->
+      <div class="header">
+        <div class="header-left">
+          <div class="header-name">LUO SHAN</div>
+          <div class="header-email">luoshan3398@qq.com</div>
+        </div>
+        <div class="header-right">
+          <div @click="goToPage('./index.html')" class="header-menu">
+            Home
+          </div>
+          <div @click="goToPage('./project.html')" class="header-menu select">
+            Project
+          </div>
+        </div>
+      </div>
+      <!-- 二级菜单 -->
+      <div class="nav-menu">
+        <div @click="goToPage('./accessibility.html')" class="nav-menu-item">Accessibility</div>
+        <div @click="goToPage('./game.html')" class="nav-menu-item select">Game</div>
+        <div @click="goToPage('./more-than-human.html')" class="nav-menu-item">More than Human</div>
+        <div @click="goToPage('./channel.html')" class="nav-menu-item">Channel</div>
+        <div @click="goToPage('./interesting.html')" class="nav-menu-item">Interesting</div>
+      </div>
+      <!-- 主体内容 -->
+      <div class="main-body">
+        <!-- <div class="main-body-title">Exploring the imbalance</div>
+        <div class="main-body-title-mini">
+          between blind and sighted individuals in different relationship
+        </div> -->
+        <div class="main-body-desc">
+          This year marks my first attempt at game development. To me, games are like dreamlike kingdoms built from imagination. I hope to have more opportunities to create plenty of 'play' experiences in the future.
+        </div>
+
+        <div class="main-body-desc-ch" style="margin-top: 74px;">
+          今年是我第一次尝试游戏，游戏对我来说是梦幻的搭建王国，希望以后有更多机会做非常多的play。
+        </div>
+
+        <div class="project-img-box">
+          <template v-for="(project, index) in sortedProjects" :key="project.id">
+            <img 
+              @click="goToPage('./detail.html?ProjectId=' + project.id)" 
+              :class="'img-size-' + ((index % 3) + 1)"
+              :src="project.coverImage" 
+              alt="">
+          </template>
+          <div v-for="n in emptyCells" :key="'empty-'+n" class="img-size-3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const { createApp, ref, computed } = Vue;
+
+    createApp({
+      setup() {
+        const projects = ref(Object.values(projectInfoData).filter(p => p.category === 'Game'));
+
+        const sortedProjects = computed(() => {
+          return [...projects.value].sort((a, b) => {
+            return (a.sortOrder || 0) - (b.sortOrder || 0);
+          });
+        });
+
+        const emptyCells = computed(() => {
+          const len = sortedProjects.value.length;
+          const remainder = len % 3;
+          return remainder === 0 ? 0 : 3 - remainder;
+        });
+
+        const goToPage = (path) => {
+          window.location.href = path;
+        };
+        return {
+          goToPage,
+          sortedProjects,
+          emptyCells
+        };
+      },
+    }).mount("#app");
+  </script>
+<script src="./js/resize.js"></script></body>
+
+</html>

@@ -18,8 +18,12 @@ World Summit on the Information Society (WSIS Prizes) Electronic Environment Cat
 `;
 
 const project1 = {
+  id: 1,
+  coverImage: "./image/project/project-1.png",
+  sortOrder: 1,
+  category: "Accessibility",
   title: "Hearing the bullseye",
-  titleDescription:'(CSCW’24, CHI PLAY’24, ASSETS’24), Waitting Publication.',
+  titleDescription: '(CSCW’24, CHI PLAY’24, ASSETS’24), Waitting Publication.',
   titleLink: [
     { name: "PDF", link: "./file/CHI_Play2024.pdf" },
   ],
@@ -173,6 +177,10 @@ const project1 = {
 };
 
 const project2 = {
+  id: 2,
+  coverImage: "./image/project/project-2.png",
+  sortOrder: 2,
+  category: "Accessibility",
   title: "Family-centered simple sound shooting interaction game",
   time: "2023",
   anthor: "Shan Luo*, Yun Wang.",
@@ -241,6 +249,10 @@ const project2 = {
 };
 
 const project3 = {
+  id: 3,
+  coverImage: "./image/project/project-3.png",
+  sortOrder: 3,
+  category: "Accessibility",
   title: "Makeup Box for the Blind",
   time: "2021",
   anthor: "Wang Xinran, Lv Jiuya, Zheng Bowen, Qin Zihan, Shan Luo*.",
@@ -295,52 +307,55 @@ const project3 = {
 };
 
 const project4 = {
+  id: 4,
+  coverImage: "./image/project/project-4.png",
+  sortOrder: 4,
+  category: "Accessibility",
   title: "Hearing the Smile” —Scoring Spontaneous Social Scenes for the Visually Impaired.",
-  greyTitle:'',
-  time: "2024",
-  anthor: "Shan Luo*, Jianan Liu. Botao Hu",
-  titleDescription: ' (IEEE VR),Camera Ready.',
-  titleLink:[
-    {name:'PDF',link:'./file/ScenScene___CHI_2025_Paper_compressed.pdf'}
+  greyTitle: '',
+  time: "2025",
+  anthor: "Shan Luo*, Jinlin Miao, Yue Chen, Hongyue Wang, Xin Tong. ",
+  titleDescription: 'DIS(submitted) Chinese CHI.',
+  titleDescriptionLink: 'https://doi.org/10.1145/3775021.3787093',
+  titleLink: [
+    { name: 'PDF', link: './file/ScenScene___CHI_2025_Paper_compressed.pdf' }
   ],
   award: [],
   introduction: {
-    text: `Can the visually impaired (VI) "hear" others’ smiles? This study employs an ethnographic experiential futures methodology to envision AI-driven melodic auditory augmentation beyond traditional descriptive approaches for spontaneous social interactions involving VI individuals. We propose a mid-fidelity research probe: "See Sing," a smart glasses application that translates facial expressions, gestures, and environmental cues into emotionally contextual soundscapes, akin to real-time cinematic scoring. Our findings indicate that this melodic augmentation not only facilitates VI users’ spontaneous interactions with strangers but also enhances their comprehension of emotional nuances in multi-person dialogues. However, the research also unveils ethical concerns, particularly regarding potential misunderstandings arising from AI biases in interpreting social subtleties. This work contributes to the discourse on the intersection of AI, assistive technology, and social interaction in our increasingly tech-mediated world, raising critical questions about the future of sensory augmentation and its societal implications.`,
+    text: `Interpersonal warmth is a key signal that helps strangers build relationships. However, BLV individuals lack access to such cues, limiting their ability to perceive warmth and establish trust. Prior work has primarily supported BLV users through auditory or textual cues during conversations, but overlooked the ice-breaking connection process—how BLV individuals can proactively sense warmth before talking. We conducted fomative study to explore the interaction modality chosen by BLV people and the challenges they face in the ice-breaking. Based on design goals from formative study, we propose \textit{Hearing the Smile}, a smart glasses prototype that translates warmth into AI-generated personalized melodies. In a user study with six BLV users, we found that \textit{Hearing the Smile} enabled BLV users to perceive and distinguish different levels of warmth. This work demonstrates how augmenting non-visual social signals can expand interpersonal social opportunities for BLV individuals, contributing design insights for accessible and affective human–AI interaction.`,
     buttonGroup: [],
   },
   contant: [
     {
       type: "img",
-      link: "./image/detail/4/1.png",
-    },{
-      type: "img",
-      link: "./image/detail/4/2.png",
-    },{
-      type: "img",
-      link: "./image/detail/4/3.png",
-    },{
-      type: "img",
-      link: "./image/detail/4/4.png",
-    },{
-      type: "img",
-      link: "./image/detail/4/5.png",
-    },{
-      type: "img",
-      link: "./image/detail/4/6.png",
-    },{
-      type: "img",
-      link: "./image/detail/4/7.png",
-    },{
-      type: "img",
       link: "./image/detail/4/8.png",
-    },{
+    }, {
       type: "video",
       link: "https://www.youtube.com/embed/zL2LgTYP1hE?si=x-bCSM4TbIVP4ZAX",
-    }
+    },{
+      type: "img",
+      link: "./image/detail/4/9.png",
+    },{
+      type: "img",
+      link: "./image/detail/4/10.png",
+    },{
+      type: "img",
+      link: "./image/detail/4/11.png",
+    },{
+      type: "img",
+      link: "./image/detail/4/12.png",
+    },{
+      type: "img",
+      link: "./image/detail/4/13.png",
+    },
   ],
 };
 
 const project5 = {
+  id: 5,
+  coverImage: "./image/project/project-5.png",
+  sortOrder: 9,
+  category: "Interesting",
   title: "Mindos.AI",
   time: "2023.07-12",
   anthor: "Shan Luo*.",
@@ -381,6 +396,10 @@ const project5 = {
 };
 
 const project6 = {
+  id: 6,
+  coverImage: "./image/project/project-6.png",
+  sortOrder: 8,
+  category: "Interesting",
   title: "Granary Culture Design Image Research",
   time: "2022.07-12",
   anthor: "Shan Luo*.",
@@ -434,6 +453,10 @@ const project6 = {
 };
 
 const project7 = {
+  id: 7,
+  coverImage: "./image/project/project-9.png",
+  sortOrder: 12,
+  category: "Interesting",
   title: "Mood Meta",
   time: "2022.04-12",
   anthor: "Shan Luo*.",
@@ -451,6 +474,10 @@ const project7 = {
 };
 
 const project8 = {
+  id: 8,
+  coverImage: "./image/project/project-10.png",
+  sortOrder: 13,
+  category: "Interesting",
   title: "Sky Camping",
   time: "2022.04-12",
   anthor: "Shan Luo*.",
@@ -472,6 +499,10 @@ const project8 = {
 };
 
 const project9 = {
+  id: 9,
+  coverImage: "./image/project/project-7.png",
+  sortOrder: 10,
+  category: "Channel",
   title: "Sky Camping",
   time: "2022.04-12",
   anthor: `Wang Yun, Chen Yunjia,  Du Liang, Feng Ruiyun, Shen Xinyu, Chen Xianxu, Mao Mengyuan, Zhao Yi, Lian Yiqing, Luo Shan, Ding Yuxin, Cai Herui, Sun Danshan
@@ -502,6 +533,10 @@ const project9 = {
 };
 
 const project10 = {
+  id: 10,
+  coverImage: "./image/project/project-8.png",
+  sortOrder: 11,
+  category: "Channel",
   title: "D-WILL Design Lecture Hall",
   time: "2022.04-12",
   anthor: `Yun Wang, Liang Du, Shan Luo, Kexin Cheng `,
@@ -540,6 +575,10 @@ const project10 = {
 };
 
 const project11 = {
+  id: 11,
+  coverImage: "./image/project/project-12.png",
+  sortOrder: 14,
+  category: "Channel",
   title: "Blind Design Podcast",
   time: "2021-",
   anthor: `Shan Luo, Liping Luo`,
@@ -552,12 +591,109 @@ const project11 = {
     {
       type: "img",
       link: "./image/detail/11/1.png",
-      style:'width: 518px;height: 864px;margin-left:342px;'
+      style: 'width: 518px;height: 864px;margin-left:342px;'
     },
   ],
 };
 
-const projectInfoData = {
+const project12 = {
+  id: 12,
+  coverImage: "./image/project/project-13.png",
+  sortOrder: 5,
+  category: "Accessibility",
+  title: "EmojiFan: Designing a Social Interface Supporting Facial Expression Interaction for Blind and Low Vision People in Party Settings",
+  time: "2025",
+  anthor: `Jinlin Miao*,  Shan Luo*, Yue Chen, Hongyue Wang, Rina R. Wehbe.`,
+  award: [],
+  introduction: {
+    text: `Facial expression interactions play a crucial role in fostering social bonds and expressing emotions. However, in the dynamic, fast-paced, and noisy environments of parties, various factors hinder blind and low-vision (BLV) individuals from engaging fully in facial expression interactions. While previous research has explored how BLV users can convey emotions through non-verbal visual cues, it has largely overlooked the challenges they face in engaging with facial expressions after perceiving these cues. To address this gap, we conducted a formative study with 10 BLV users to identify their challenges and expectations regarding facial expression interactions in party settings. Guided by these insights, we developed \textit{EmojiFan}, an AI-powered smart fan designed to offer a personalized representation of facial expressions through dynamic, expressive emojis. Finally, we carried out an in-the-field study with 6 BLV participants and 8 sighted social partners to examine the effectiveness of \textit{EmojiFan} in enhancing facial-expression interactions during parties. Overall, our goal is to empower BLV individuals' autonomy to actively participate in social interactions through digital facial expression, thereby contributing new insights for the accessibility community on designing expressive, socially responsive assistive technologies.`,
+    buttonGroup: [],
+  },
+  contant: [
+    {
+      type: "img",
+      link: "./image/detail/12/1.png",
+    },{
+      type:"video",
+      link: "https://youtu.be/tUyL3eht8tI",
+    },{
+      type:"img",
+      link: "./image/detail/12/2.png",
+    },{
+      type:"img",
+      link: "./image/detail/12/3.png",
+    }
+  ],
+};
+const project13 = {
+  id: 13,
+  coverImage: "./image/project/project-14.png",
+  sortOrder: 6,
+  category: "Game",
+  title: "TunTun Diary: Exploring AI-Generated Storytelling and Virtual Companionship for Nightmare Relief",
+  time: "2025",
+  anthor: `Zixin Wang, Shan Luo , Kesheng Shenlv, Siyu Chen, Yunxi Cai, Long Ling, Muhan Xu...`,
+  award: [],
+  linkGroup: [
+    {
+      text: "SIGGRAPH ASIA 25 POSTER",
+      link: "https://dl.acm.org/doi/10.1145/3757374.3771484",
+    },{
+      text: "App Store",
+      link: "https://apps.apple.com/cn/app/%E5%90%9E%E5%90%9E%E6%97%A5%E8%AE%B0/id6744860687",
+    }
+  ],
+  introduction: {
+    text: `Nightmares disrupt sleep and heighten daytime anxiety, yet therapeutic support is often hard to access due to limited clinician availability, cost, and clinical framing. We propose TunTun Diary, a mobile game in which an alien puppy named TunTun “eats” players’ nightmares and returns gentle, comic-style retellings. The system uses generative AI to reinterpret users' nightmare descriptions into positive narratives. Through simple text-based dream input and playful pet interactions, players form an emotional bond with TunTun as a safe and supportive companion for coping with negative dreams. In a preliminary deployment with 20 young adults, participants reported emotional relief and increased comfort after engaging with TunTun’s transformed dream comics, often describing the experience as both soothing and playful. These findings highlight how integrating therapy-inspired reframing with interactive storytelling and virtual companionship can lower barriers to everyday emotional support. By illustrating a novel application of AI-based visual storytelling in game contexts, TunTun Diary opens opportunities for future research at the intersection of visual computing, affective interaction, and game design. `,
+    buttonGroup: [],
+  },
+  contant: [
+    {
+      type: "img",
+      link: "./image/detail/13/1.png",
+    },{
+      type: "img",
+      link: "./image/detail/13/2.png",
+    },{
+      type:"video",
+      link: "https://youtu.be/FasTVWuRr_c",
+    }
+  ],
+};
+const project14 = {
+  id: 14,
+  coverImage: "./image/project/project-15.png",
+  sortOrder: 7,
+  category: "More than Human",
+  title: "Asking Water with Stones: Designing Playful Dialogues with Water System to Build Connection between Human and Water Ecosystems",
+  time: "2025",
+  anthor: `Shan Luo , Weitao JIang, jinlin Miao, Hongyue Wang Jiangnan Xu, Çağlar Genç, Oğuz 'Oz' Buruk`,
+  award: [],
+  linkGroup: [
+    {
+      text: "TEI 26",
+      link: "https://doi.org/10.1145/3731459.3779351",
+    }
+  ],
+  introduction: {
+    text: `The more-than-human field has contributed numerous opportunities for interacting with nature, animals, plants, and microorganisms. However, few studies have examined water ecosystems. Current water-related work primarily treats water as a medium for human-centered activities, rarely positioning water as an interactive subject. Building upon prior research, we explore how to better integrate water more playfully into digital-physical interactions as an interactive subject. We designed and developed “Water’s Echo”, an AI-powered public installation that enables human-water communication through a playful stone-throwing dialogue. We conducted a field study at a local pond, recruiting 15 residents to participate in \textit{Water’s Echo}—a playful conversational interaction. Our findings indicate that this playful dialogue approach raises participants' awareness and understanding of surrounding aquatic environments. This research provides insights for design researchers to establish engaging water ecology interactions across cultural communities, promoting a More-than-human perspective in re-examining human-nature relationships.`,
+    buttonGroup: [],
+  },
+  contant: [
+    {
+      type: "img",
+      link: "./image/detail/14/1.png",
+    },{
+      type: "img",
+      link: "./image/detail/14/2.png",
+    },{
+      type:"video",
+      link: "https://youtu.be/xtO-DPJx4m4",
+    }
+  ],
+};
+
+var projectInfoData = {
   project1,
   project2,
   project3,
@@ -568,5 +704,8 @@ const projectInfoData = {
   project8,
   project9,
   project10,
-  project11
+  project11,
+  project12,
+  project13,
+  project14,
 };
