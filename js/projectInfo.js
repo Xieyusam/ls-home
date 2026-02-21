@@ -615,7 +615,7 @@ const project12 = {
       link: "./image/detail/12/1.png",
     },{
       type:"video",
-      link: "https://youtu.be/tUyL3eht8tI",
+      link: "https://www.youtube.com/embed/tUyL3eht8tI?si=Sesm6I4bwRALkHPK",
     },{
       type:"img",
       link: "./image/detail/12/2.png",
@@ -656,7 +656,7 @@ const project13 = {
       link: "./image/detail/13/2.png",
     },{
       type:"video",
-      link: "https://youtu.be/FasTVWuRr_c",
+      link: "https://www.youtube.com/embed/xtO-DPJx4m4?si=f7f88MVv79PloLDD",
     }
   ],
 };
@@ -688,7 +688,7 @@ const project14 = {
       link: "./image/detail/14/2.png",
     },{
       type:"video",
-      link: "https://youtu.be/xtO-DPJx4m4",
+      link: "https://www.youtube.com/embed/X_E12_jcGMI?si=_LIdJNwNrNr3RwTU",
     }
   ],
 };
